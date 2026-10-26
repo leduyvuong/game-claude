@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/makehumancommunity/makehuman",
+  "revision": "a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+  "license": "CC0-1.0",
+  "files": {
+    "LICENSE.ASSETS.md": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c",
+    "LICENSE.md": "edd99571ca62698f78c943fd4fffb159a413c315fa0d4819d3cec5cadaf8b4f1",
+    "makehuman/data/3dobjs/base.obj": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c",
+    "makehuman/data/rigs/default.mhskel": "99f179bce0aa850b45d4191a1d0d234c5851f881c057439470ded3bddf729a24",
+    "makehuman/data/rigs/default_weights.mhw": "0f3641d651ae3d00ad6b4ccee43142edb109d3bd909d27d9e4139ef1beed8625",
+    "makehuman/data/targets/chin/chin-width-incr.target": "deef506bfe1883d9d4c38667332c9970785226566efbae4724fd3d60c02efcf4",
+    "makehuman/data/targets/head/head-age-decr.target": "dce4ba0fcd18e7a4e5bc86d98785452ac5ca6d33b993d7c37ffdb339e50ff568",
+    "makehuman/data/targets/macrodetails/asian-female-young.target": "095fe79694fa19e1fe98d93009ec116199bd524e081c640351a10eccf2cca1eb",
+    "makehuman/data/targets/macrodetails/asian-male-young.target": "ed2e8c191cb6b87b4a2d97c80486acb2604fa549316c7aa2a738a5d5a14334dc",
+    "makehuman/data/targets/macrodetails/caucasian-female-young.target": "118379f6e8ba9266247fdb8788a20e1df40a239f97ced0b9905bcbcc74f6e820",
+    "makehuman/data/targets/macrodetails/caucasian-male-young.target": "70e228ba7164737dae664454394536fc5935fa48d333c1a97d77e2dc6eacc5f5",
+    "makehuman/data/targets/macrodetails/universal-female-young-averagemuscle-averageweight.target": "4ba5396ddabda448ece15650a566fbebfbb10239256ccb201e8f883429e12249",
+    "makehuman/data/targets/macrodetails/universal-female-young-maxmuscle-averageweight.target": "2e56b09b44a8497b927585447fdaac5ea7293521d1f3a3df1059495873c53f4e",
+    "makehuman/data/targets/macrodetails/universal-male-young-averagemuscle-averageweight.target": "4ba5396ddabda448ece15650a566fbebfbb10239256ccb201e8f883429e12249",
+    "makehuman/data/targets/macrodetails/universal-male-young-maxmuscle-averageweight.target": "c171ff9cc95e96273beb3e3b1969a01988c2d4982ebc6fe04bf81cf72ee3b295",
+    "makehuman/data/targets/mouth/mouth-angles-up.target": "8ddc2f53f4264742f4e10ddafd128e059e09c6a4268a2722e9495bad0f274898",
+    "makehuman/data/targets/mouth/mouth-lowerlip-middle-up.target": "b52334380917a0b648a35cfd89dd48fbb7fa95745fff28753d30ea73d169de7c",
+    "makehuman/data/targets/mouth/mouth-scale-depth-decr.target": "15e5da9894901446e21ff4feda6aa757b67e889745995a1d1544002e615c8a30",
+    "makehuman/data/targets/mouth/mouth-upperlip-middle-down.target": "bc35d43e1e631c84df30730cb3578ba35bc645fbf55d0b586ebebb2f424a56ab",
+    "makehuman/data/targets/nose/nose-scale-depth-decr.target": "b46c35046c9c451b7ffe77acc0573bd945d7c6acaefe43d8c21912d4ce1a6e4c",
+    "makehuman/data/eyes/high-poly/high-poly.mhclo": "b183cfe37120ab726f9b3f2ea6cd3a64c44ce7b4bd91a77c841cf70c04f83a0d",
+    "makehuman/data/eyes/high-poly/high-poly.obj": "da2493215b708a344c33dc72f2a9a5b8fa985dcc5a70ad3b208995cf871da8e1",
+    "makehuman/data/eyes/materials/brown.mhmat": "4abad93ce50541c08127721e77bce035640c9f16bed16cd0f5524b1cd5908465",
+    "makehuman/data/eyes/materials/brown_eye.png": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b"
+  }
+}

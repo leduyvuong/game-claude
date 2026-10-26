@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Môi trường — Mùa Vàng</title>
+<style>
+:root{--ink:#294437;--green:#386647;--muted:#67786a;--line:#dedfcd;--paper:#f5f0e5}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 "Segoe UI",Tahoma,sans-serif}header{background:#e4e9d6;border-bottom:1px solid var(--line);padding:30px 5vw 24px}.eyebrow{font-size:12px;letter-spacing:2px;color:var(--green);font-weight:700}h1{font-size:32px;line-height:1.2;margin:6px 0}p{color:var(--muted);margin:8px 0}nav{display:flex;gap:8px;flex-wrap:wrap;padding:20px 5vw}button{font:inherit;border:1px solid var(--line);background:#fffdf6;color:var(--ink);padding:8px 17px;border-radius:24px;cursor:pointer}button.active{color:white;background:var(--green);border-color:var(--green)}button:hover{border-color:var(--green)}a{color:var(--green)}a:focus-visible,button:focus-visible{outline:3px solid #d0a540;outline-offset:3px}main{padding:0 5vw 36px;max-width:1700px;margin:auto}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{border:1px solid var(--line);background:#fffdf6;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit}.card img{display:block;width:100%;aspect-ratio:9/8;object-fit:contain;background:#f2ede0}.caption{padding:13px 17px}.caption strong{display:block}.category{font-size:12px;letter-spacing:1px;color:var(--muted)}.scene{border-radius:18px;overflow:hidden;border:1px solid var(--line);margin:0 0 24px;background:#f2ede0}.scene img{width:100%;display:block}.scene .caption{background:#fffdf6}.motion img{width:100%;display:block}footer{border-top:1px solid var(--line);padding:18px 5vw;font-size:13px;color:var(--muted)}[hidden]{display:none!important}@media(max-width:950px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:580px){h1{font-size:26px}.grid{grid-template-columns:1fr}nav{gap:6px}button{font-size:14px;padding:7px 12px}}
+</style>
+</head>
+<body>
+<header><div class="eyebrow">MÙA VÀNG · ĐẢO NÔNG TRẠI</div><h1>Đất, nước và địa hình</h1><p>18 mẫu môi trường. Chọn một nhóm hoặc chạm ảnh để xem hai góc nhìn.</p></header>
+<nav id="nav" aria-label="Lọc nhóm model"></nav>
+<main><a class="scene" href="Island-showcase.png" target="_blank" rel="noopener" style="display:block;text-decoration:none;color:inherit"><img src="Island-showcase.png" alt="Cảnh đảo với ruộng, núi, ao hồ và mặt biển"><div class="caption"><strong>Cảnh ghép trên đảo</strong><span class="category">Cây trồng và môi trường dùng chung tỷ lệ trong Unity</span></div></a><p><a href="Farm-preview.png" target="_blank" rel="noopener">Xem trong nông trại hiện tại</a> &middot; <a href="Overview.png" target="_blank" rel="noopener">Ảnh tổng hợp các model</a></p><div class="grid" id="grid"></div><div class="motion" id="motion" hidden><h2>Gợn nước theo thời gian</h2><p>Ba khung hình của cùng một mặt nước, render tại thời điểm khác nhau.</p><a href="Water-motion.png" target="_blank" rel="noopener"><img src="Water-motion.png" alt="Ba thời điểm của hiệu ứng gợn nước"></a></div></main>
+<footer>Model 3D và ảnh render bằng Unity. Đất, đá và núi có collider; mặt nước dùng hiệu ứng gợn nhẹ.</footer>
+<script>
+const data=__MODEL_DATA__;
+const groups=['Tất cả',...new Set(data.models.map(m=>m.group))];
+const nav=document.getElementById('nav'),grid=document.getElementById('grid');
+for(const group of groups){const button=document.createElement('button');button.textContent=group;button.dataset.group=group;nav.append(button)}
+function show(group){nav.querySelectorAll('button').forEach(b=>{const active=b.dataset.group===group;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});grid.replaceChildren();for(const model of data.models.filter(m=>group==='Tất cả'||m.group===group)){const card=document.createElement('a');card.className='card';card.href=model.name+'-views.png';card.target='_blank';card.rel='noopener';card.innerHTML=`<img src="${model.name}.png" alt="${model.label}" loading="lazy"><div class="caption"><span class="category">${model.group}</span><strong>${model.label}</strong></div>`;grid.append(card)}document.getElementById('motion').hidden=group!=='Nước'}
+nav.addEventListener('click',event=>{const b=event.target.closest('button');if(b)show(b.dataset.group)});show('Tất cả');
+</script>
+</body>
+</html>

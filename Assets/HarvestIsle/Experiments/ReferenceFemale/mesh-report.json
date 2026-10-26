@@ -1,0 +1,36 @@
+{
+  "revision": 2,
+  "profile": "adult female",
+  "height": 1.8381352818727819,
+  "triangles": 109220,
+  "vertices": 54738,
+  "parts": 4,
+  "eyeCenters": [
+    [
+      0.035725970288470285,
+      1.7108900036400034,
+      0.13877497042497045
+    ],
+    [
+      -0.035725970288470285,
+      1.7108900036400034,
+      0.13877497042497045
+    ]
+  ],
+  "targets": {
+    "macrodetails/asian-female-young": 0.6,
+    "macrodetails/caucasian-female-young": 0.4,
+    "macrodetails/universal-female-young-averagemuscle-averageweight": 0.85,
+    "macrodetails/universal-female-young-maxmuscle-averageweight": 0.15,
+    "head/head-age-decr": 0.12,
+    "nose/nose-scale-depth-decr": 0.12,
+    "chin/chin-width-incr": 0,
+    "mouth/mouth-angles-up": 0.3,
+    "mouth/mouth-upperlip-middle-down": 0.2,
+    "mouth/mouth-lowerlip-middle-up": 0.2,
+    "mouth/mouth-scale-depth-decr": 0.12
+  },
+  "source": "MakeHuman CC0 anatomical base, adapted to reference",
+  "subdivision": "one Catmull-Clark level",
+  "rigged": false
+}

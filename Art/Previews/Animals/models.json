@@ -1,0 +1,160 @@
+{
+    "animals": [
+        {
+            "name": "Chicken",
+            "label": "Gà",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Chicken.prefab",
+            "actions": [
+                "Đứng",
+                "Đi",
+                "Mổ thức ăn",
+                "Vỗ cánh"
+            ],
+            "triangles": 5424
+        },
+        {
+            "name": "Duck",
+            "label": "Vịt",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Duck.prefab",
+            "actions": [
+                "Đứng",
+                "Đi",
+                "Mổ thức ăn",
+                "Vỗ cánh"
+            ],
+            "triangles": 5196
+        },
+        {
+            "name": "Cow",
+            "label": "Bò",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Cow.prefab",
+            "actions": [
+                "Đứng",
+                "Đi",
+                "Cúi đầu",
+                "Nhìn quanh"
+            ],
+            "triangles": 22668
+        },
+        {
+            "name": "Pig",
+            "label": "Heo",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Pig.prefab",
+            "actions": [
+                "Đứng",
+                "Đi",
+                "Ngửi đất",
+                "Nhìn quanh"
+            ],
+            "triangles": 16992
+        },
+        {
+            "name": "Cat",
+            "label": "Mèo",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Cat.prefab",
+            "actions": [
+                "Đứng",
+                "Đi",
+                "Cúi đầu",
+                "Nhìn quanh"
+            ],
+            "triangles": 21974
+        },
+        {
+            "name": "Sheep",
+            "label": "Cừu",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Sheep.prefab",
+            "actions": [
+                "Đứng",
+                "Đi",
+                "Cúi đầu",
+                "Nhìn quanh"
+            ],
+            "triangles": 30184
+        },
+        {
+            "name": "Buffalo",
+            "label": "Trâu",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Buffalo.prefab",
+            "actions": [
+                "Đứng",
+                "Đi",
+                "Cúi đầu",
+                "Nhìn quanh"
+            ],
+            "triangles": 18456
+        },
+        {
+            "name": "Deer",
+            "label": "Hươu",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Deer.prefab",
+            "actions": [
+                "Đứng",
+                "Đi",
+                "Cúi đầu",
+                "Nhìn quanh"
+            ],
+            "triangles": 12778
+        },
+        {
+            "name": "Sparrow",
+            "label": "Chim sẻ",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Sparrow.prefab",
+            "actions": [
+                "Đứng",
+                "Đi",
+                "Mổ thức ăn",
+                "Bay và vỗ cánh"
+            ],
+            "triangles": 8708
+        },
+        {
+            "name": "Koi",
+            "label": "Cá koi",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Koi.prefab",
+            "actions": [
+                "Thả mình",
+                "Bơi",
+                "Ngoi đầu",
+                "Lượn"
+            ],
+            "triangles": 7547
+        },
+        {
+            "name": "Carp",
+            "label": "Cá chép",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Carp.prefab",
+            "actions": [
+                "Thả mình",
+                "Bơi",
+                "Ngoi đầu",
+                "Lượn"
+            ],
+            "triangles": 7250
+        },
+        {
+            "name": "Perch",
+            "label": "Cá rô đồng",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Perch.prefab",
+            "actions": [
+                "Thả mình",
+                "Bơi",
+                "Ngoi đầu",
+                "Lượn"
+            ],
+            "triangles": 7310
+        },
+        {
+            "name": "Bulbul",
+            "label": "Chim chào mào",
+            "prefab": "Assets/HarvestIsle/Resources/Animals/Bulbul.prefab",
+            "actions": [
+                "Đứng",
+                "Đi",
+                "Mổ thức ăn",
+                "Bay và vỗ cánh"
+            ],
+            "triangles": 8792
+        }
+    ]
+}

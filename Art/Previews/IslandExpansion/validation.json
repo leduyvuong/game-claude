@@ -1,0 +1,141 @@
+{
+  "verifiedAtUtc": "2026-10-26T00:00:05.352682+00:00",
+  "coreTests": 155,
+  "serverChecks": 35,
+  "unityCompile": true,
+  "projectCheck": true,
+  "modelLibraryCheck": true,
+  "visualReview": "Designer and root reviewed four overview sheets, representative three-angle closeups, UI, mounted props, new crops and health states in Play.",
+  "platform": "Unity Editor on Windows; no Android/iOS benchmark",
+  "limitations": [
+    "Expansion commands are solo-only",
+    "Building upgrades reuse the same mesh",
+    "Props are static; no dedicated swing/waterwheel/lantern animation",
+    "Timed story services do not simulate NPC routes",
+    "Farm school uses three knowledge questions",
+    "Local save is not tamper resistant",
+    "Economy has not been balanced across multiple seasons"
+  ],
+  "results": {
+    "expansion-geometry-result": {
+      "status": "complete",
+      "models": 330,
+      "maxTriangles": 12248,
+      "minY": -0.10000002384185791,
+      "failures": []
+    },
+    "expansion-assets-all": {
+      "status": "complete",
+      "types": 120,
+      "prefabs": 330,
+      "maxTriangles": 12248
+    },
+    "expansion-preview-all": {
+      "status": "complete",
+      "types": 150,
+      "variants": 330,
+      "angles": 3
+    },
+    "island-catalog-result": {
+      "status": "complete",
+      "types": 503,
+      "variants": 930,
+      "prefabs": 965
+    },
+    "island-sample-result": {
+      "status": "complete",
+      "sampleChain": true,
+      "saveMigration": true,
+      "placement": true,
+      "playerPreserved": true,
+      "allPrefabs": 31
+    },
+    "island-all-result": {
+      "status": "complete",
+      "sampleChain": true,
+      "saveMigration": true,
+      "placement": true,
+      "playerPreserved": true,
+      "allPrefabs": 330
+    },
+    "farm-loop-result": {
+      "status": "complete",
+      "crops": 3,
+      "stages": 15,
+      "plots": 24,
+      "finalCoins": 161,
+      "saveReload": true,
+      "backupRecovery": true,
+      "existingFarmUntouched": true
+    },
+    "play-interface-result": {
+      "status": "complete",
+      "seeds": 60,
+      "contextPlantWaterHarvest": true,
+      "readingPausesEcology": true,
+      "liveFarmUnchanged": true
+    },
+    "development-result": {
+      "status": "complete",
+      "crops": 60,
+      "buildingUpgrades": 27,
+      "productionChain": true,
+      "saveReload": true,
+      "landParcels": 2,
+      "hotpot": true,
+      "workers": true,
+      "bees": true,
+      "fishPond": true,
+      "weeklyQuests": 3,
+      "playerFarmUntouched": true
+    },
+    "development-ui-result": {
+      "status": "complete",
+      "buildingThumbnails": 9,
+      "tabs": 8,
+      "worldInputBlocked": true,
+      "liveFarmUnchanged": true
+    },
+    "recruitment-result": {
+      "status": "complete",
+      "workers": 72,
+      "crops": 30,
+      "uiDraw": true,
+      "pendingSaveReload": true,
+      "legacyMigration": true,
+      "specialistHarvests": 2,
+      "avatars": 3,
+      "worldInputBlocked": true,
+      "liveFarmUntouched": true
+    },
+    "hotpot-result": {
+      "status": "complete",
+      "kitchenImports": true,
+      "recipeScoring": true,
+      "saveReload": true,
+      "floors": 4,
+      "furniture": true,
+      "referencePrefabs": 52,
+      "newTableService": true,
+      "duplicateServeBlocked": true,
+      "worldInputBlocked": true,
+      "playerFarmUntouched": true
+    },
+    "online-result": {
+      "status": "complete",
+      "checks": "register, separate farm, plant, water, ranch, daily, duplicate rejection, solo preservation, logout, re-login persistence"
+    },
+    "estate-result": {
+      "status": "complete",
+      "plots": 36,
+      "pens": 6,
+      "animals": 12,
+      "workshops": 9,
+      "raycasts": 36,
+      "saveReload": true,
+      "playerSaveUntouched": true,
+      "farmCheck": true,
+      "playInterfaceCheck": true
+    }
+  }
+}

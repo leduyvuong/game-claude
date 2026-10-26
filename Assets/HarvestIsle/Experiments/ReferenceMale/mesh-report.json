@@ -1,0 +1,35 @@
+{
+  "revision": 2,
+  "height": 1.8389186341763921,
+  "triangles": 109220,
+  "vertices": 54738,
+  "parts": 4,
+  "eyeCenters": [
+    [
+      0.034313809634614924,
+      1.714422970215508,
+      0.14174562301615715
+    ],
+    [
+      -0.034313809634614924,
+      1.714422970215508,
+      0.14174562301615715
+    ]
+  ],
+  "targets": {
+    "macrodetails/asian-male-young": 0.6,
+    "macrodetails/caucasian-male-young": 0.4,
+    "macrodetails/universal-male-young-averagemuscle-averageweight": 0.7,
+    "macrodetails/universal-male-young-maxmuscle-averageweight": 0.3,
+    "head/head-age-decr": 0.12,
+    "nose/nose-scale-depth-decr": 0.12,
+    "chin/chin-width-incr": 0.12,
+    "mouth/mouth-angles-up": 0.3,
+    "mouth/mouth-upperlip-middle-down": 0.2,
+    "mouth/mouth-lowerlip-middle-up": 0.2,
+    "mouth/mouth-scale-depth-decr": 0.12
+  },
+  "source": "MakeHuman CC0 anatomical base, adapted to reference",
+  "subdivision": "one Catmull-Clark level",
+  "rigged": false
+}

@@ -1,0 +1,37 @@
+ReferenceMale, revision 2
+
+Anatomical base mesh, morph targets, eye mesh and eye texture:
+MakeHuman Community
+https://github.com/makehumancommunity/makehuman
+Revision a8bc2d54ff0ac92e78ff71431b1023eda42bf482
+License: CC0 1.0 Universal (graphical assets, not the application source code).
+
+Original data and complete license texts are preserved at:
+Design/References/MakeHuman/
+SHA-256 hashes and upstream paths: source-manifest.json in that directory.
+
+Adaptation in this project:
+- Young male morph with 60% Asian / 40% Caucasian shape blend.
+- Moderate muscle, softer face and reference-oriented head proportions.
+- One Catmull-Clark subdivision; native smooth normals.
+- Eye mesh fitted to the morphed topology; thin surface-conforming eyebrows.
+- Gray clay studio materials for shape review.
+
+Build script: Tools/build_reference_male.py
+Reference photographs supplied by the user:
+Design/References/Anh_tham_chieu_nhan_vat_nam_nu/Nam/
+
+This is an adapted CC0 base, not a claim of an entirely original hand-sculpted mesh.
+Motion study: 49-bone weighted rig adapted from MakeHuman default.mhskel
+and default_weights.mhw (CC0; preserved with the source data).
+Tools/build_reference_male_rig.py propagates skin weights through subdivision,
+normalizes four influences per vertex and exports ReferenceMaleSkin.bytes.
+Unity creates native skinned meshes and procedural motion in ReferenceMaleMotion.
+11 in-place study actions; no gameplay integration or mobile optimization.
+
+Outfit: fitted green short-sleeve T-shirt and blue full-length trousers.
+Tools/reference_male_clothes.py derives separate garment panels from the CC0
+body surface, adds ease and folded opening trims, and transfers skin weights.
+Covered body triangles are omitted from the clothed renderer to prevent poke-through.
+No cloth physics; the outfit deforms with the same skeleton as the body.
+Garment generation statistics: clothes-report.json. Clothed total: rig-report.json.

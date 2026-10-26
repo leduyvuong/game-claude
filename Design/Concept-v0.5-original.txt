@@ -1,0 +1,216 @@
+CỐT GAME — "MÙA VÀNG: ĐẢO NÔNG TRẠI" (Harvest Isle)
+Game nông trại trên điện thoại, chơi online cùng bạn bè. Bản concept v0.5 — chốt công nghệ: web game (HTML5/TypeScript), không dùng Unity. (v0.4: trình bày 2D landscape, góc nhìn kiểu Hay Day.) (v0.3: kỹ thuật canh tác — cấy ghép, luân canh, xen kẽ, lịch mùa vụ. v0.2: độ khó — sâu bệnh, thiên tai, ngập úng.)
+
+1. Tổng quan
+Hạng mục	Nội dung
+Thể loại	Farming sim + Social co-op + Quản lý rủi ro
+Nền tảng	Mobile (Android & iOS), màn hình ngang (landscape) cố định
+Trình bày	2D góc nhìn từ trên cao nhìn xuống, xéo nhẹ kiểu Hay Day — kéo thả để di chuyển, chụm ngón để zoom
+Đối tượng	12–35 tuổi, chơi nhẹ nhàng, thích rủ bạn bè
+Phiên chơi	5–15 phút/lần, nhiều lần trong ngày
+Điểm bán hàng chính	Nông trại của bạn nằm cạnh nông trại bạn bè trên cùng một hòn đảo — không chỉ "ghé thăm" mà thực sự canh tác chung, cùng nhau chống chọi sâu bệnh và thiên tai
+High concept một câu: Stardew Valley gặp Hay Day — cả nhóm bạn cùng sống trên một hòn đảo, mỗi người một mảnh đất, cùng làm giàu và cùng gồng mình qua mùa mưa bão, dịch châu chấu.
+
+2. Cốt truyện & bối cảnh
+Ngày xưa, Đảo Mùa Vàng là hòn đảo trù phú nhất vùng biển phương Nam, nổi tiếng với những vụ mùa "vàng ròng" — lúa chín óng ánh như kim loại quý. Nhưng một cơn bão lớn mang tên Bão Xám quét qua, cuốn đi màu mỡ của đất, khiến cư dân bỏ đảo ra đi. Hòn đảo ngủ quên suốt 50 năm.
+
+Người chơi là cháu của một cư dân cũ, nhận được lá thư thừa kế: một mảnh đất hoang trên đảo, một căn chòi xiêu vẹo, và cuốn Nhật Ký Mùa Vàng của ông bà để lại — trong đó ghi chép những bí mật giúp đất đai hồi sinh, và cả những trang cảnh báo: cách ông bà từng chống rầy nâu, đắp đê ngăn lũ, đọc mây đoán bão.
+
+Nhưng lá thư không chỉ gửi cho một mình bạn. Bạn bè của bạn cũng nhận được thư — mỗi người thừa kế một mảnh đất trên cùng hòn đảo. Cả nhóm cùng quay về, cùng khôi phục hòn đảo.
+
+Trên đảo còn có:
+
+Già làng Tư — NPC hướng dẫn, người duy nhất ở lại đảo suốt 50 năm, giao nhiệm vụ cốt truyện. Mỗi sáng phát bản tin radio dự báo thời tiết cho cả đảo.
+Thương nhân Hải Âu — ghé đảo mỗi ngày bằng thuyền, thu mua nông sản với giá thay đổi theo thị trường. Bán cả bảo hiểm mùa màng.
+Linh vật Đom Đóm Vàng — xuất hiện khi đất đai hồi sinh đến mức nhất định, mở khóa khu vực mới của đảo.
+Mục tiêu dài hạn của cốt truyện: hồi sinh toàn bộ hòn đảo qua từng khu vực (bãi biển → đồng lúa → rừng → núi lửa cũ → hải đăng), mỗi khu mở ra cây trồng, vật nuôi và bí mật mới trong Nhật Ký Mùa Vàng. Chương cuối hé lộ: Bão Xám không phải thiên tai tự nhiên — chính sự canh tác tham lam, vắt kiệt đất của thế hệ trước đã "nuôi" nó, và nó sẽ quay lại. Cả đảo phải cùng nhau chuẩn bị (sự kiện server-wide theo mùa).
+
+3. Vòng lặp gameplay chính (Core Loop)
+Gieo trồng → Chăm sóc & PHÒNG CHỐNG (sâu bệnh, thời tiết) → Thu hoạch → Chế biến → Bán
+     ↑                                                                        |
+     └──────────────── Mua giống, nâng cấp, gia cố, mở đất ←──────────────────┘
+Vòng lặp xã hội chồng lên vòng lặp cá nhân:
+
+Giúp bắt sâu / đắp đê cho bạn → Điểm Tình Làng Nghĩa Xóm → Công trình chung
+     → Công trình chung bảo vệ & buff cả đảo → Cả nhóm vượt mùa khó → Rủ thêm bạn
+Thời gian thực (idle): cây trồng lớn theo thời gian thật (cà rốt 5 phút, lúa 2 giờ, cây ăn quả 1 ngày). Vào game lúc nào cũng có việc để làm.
+Không phạt nặng khi vắng mặt bình thường: cây chín không chết, chỉ giảm nhẹ chất lượng — bạn bè có thể thu hoạch giúp. Nhưng khi có cảnh báo sâu bệnh/thời tiết mà bỏ mặc thì có thể mất mùa thật — đây là nguồn độ khó chính (chi tiết ở mục 5).
+4. Hệ thống nông trại
+4.1 Trồng trọt & lịch mùa vụ
+~30 loại cây khi ra mắt: rau ngắn ngày (cà rốt, cải), cây lương thực (lúa, ngô), cây ăn quả lâu năm (xoài, dừa), cây đặc sản theo khu vực đảo.
+Chất lượng đất: đất hồi sinh dần khi canh tác đúng cách (luân canh, bón phân ủ) — gắn với cốt truyện hồi sinh đảo. Đất tốt → nông sản đạt sao cao hơn (1–3 sao, bán giá cao hơn). Độc canh một loại cây liên tục làm đất bạc màu và tăng mạnh tỷ lệ sâu bệnh (xem 5.1).
+Mùa trong game: 4 mùa, mỗi mùa = đúng 1 tuần thực (cả server cùng lịch — thứ Hai nào cũng sang mùa mới). Cây trái mùa không gieo được ngoài trời; cây đang lớn mà hết mùa thì héo dần trong 24 giờ ân hạn — đủ để thu non (giá trị thấp hơn) hoặc bứng vào nhà kính. Mỗi mùa mang một mối đe dọa riêng (xem 5.2) → người chơi phải quy hoạch vụ mùa, không chỉ trồng theo thói quen.
+Lịch cây trồng theo mùa (ví dụ bộ khởi điểm):
+
+Mùa	Cây ngắn ngày	Cây chủ lực	Đặc sản mùa
+Xuân	Cải ngọt, đậu Hà Lan	Dâu tây, cà rốt	Hoa cúc vạn thọ (vừa bán vừa đuổi rầy)
+Hè	Ớt, sả	Lúa, ngô, cà chua	Dưa hấu (to dần theo ngày, thu đúng lúc mới đạt 3 sao)
+Thu (mưa)	Rau muống	Khoai môn, mía	Sen (chỉ trồng được ô ngập!), nấm sau mưa
+Đông	Hành, củ cải	Bắp cải, lúa mì	Trà tuyết (chỉ mọc vùng núi cao của đảo)
+Cây lâu năm (xoài, dừa...) sống quanh năm nhưng chỉ ra quả vào mùa của nó → nông trại không bao giờ "một màu" giữa các tuần.
+Nhà kính trồng được cây trái mùa nhưng chi phí cao + chiếm đất → hàng trái mùa bán giá gấp 2–3 lần ở chợ phiên, thành nghề riêng cho ai thích đầu tư.
+Địa hình mảnh đất: có ô cao, ô trũng. Ô trũng đất màu mỡ hơn (+chất lượng) nhưng ngập trước tiên trong mùa mưa — rủi ro đổi lấy phần thưởng ngay từ cách chọn ô gieo trồng. Mùa mưa, chính ô trũng lại thành đất vàng để trồng sen.
+4.2 Kỹ thuật canh tác nâng cao 🌾 (mới trong v0.3)
+Đây là "phần cứng tay" dành cho người chơi muốn tối ưu: chơi thường vẫn sống khỏe, nhưng nắm 3 kỹ thuật này thì năng suất và chất lượng vượt hẳn — tri thức là sức mạnh, đúng chất nhà nông.
+
+a) Luân canh (xoay vòng nhóm cây):
+
+Cây chia 5 nhóm theo "khẩu vị" với đất: Lá (hút đạm), Củ (xới tơi đất), Quả (hút kali), Đậu (trả đạm lại cho đất), Hoa (dưỡng đất, đuổi sâu).
+Mỗi ô đất nhớ 2 vụ gần nhất. Trồng khác nhóm vụ trước: +10% năng suất; đủ chuỗi 3 vụ khác nhóm liên tiếp: +20% + giảm nửa tỷ lệ sâu bệnh ở vụ thứ ba. Ngược lại, cùng nhóm 3 vụ liền: đất bạc màu, sâu bệnh x2.
+Nhóm Đậu là "thuốc bổ miễn phí": sau vụ đậu, ô đất tự hồi 1 bậc chất lượng — kinh tế kém hơn nhưng là nước đi đầu tư.
+UI dạy bằng mắt: khi chọn giống, viền ô sáng xanh (nhóm hợp), vàng (bình thường), đỏ (độc canh) — người chơi học luân canh mà không cần đọc bảng.
+b) Trồng xen kẽ (xen canh — cặp cây "bạn tốt"):
+
+Buff tính theo ô liền kề: đặt đúng hàng xóm là năng suất cộng dồn:
+Bộ ba Ngô – Đậu leo – Bí đỏ (ngô làm giàn cho đậu, đậu nuôi đất, bí phủ gốc giữ ẩm): cả ba +15% và gần như miễn nhiễm cỏ dại.
+Cà rốt – Hành: mùi hành đuổi ruồi cà rốt, cà rốt đuổi sâu hành → đôi bạn -50% sâu cho nhau.
+Cúc vạn thọ cạnh bất kỳ cây nào: -30% tỷ lệ rầy cho 8 ô xung quanh.
+Hoa + tổ ong gần cây ăn quả: ong thụ phấn, cây quả +15% sản lượng, lại thu thêm mật.
+Có cả cặp kỵ nhau: cà chua cạnh khoai tây (cùng họ) → dịch bệnh lây chéo nhanh gấp đôi. Icon mặt cười/mặt nhăn hiện ngay khi kéo giống vào ô → học bằng trực giác.
+Xen canh + luân canh cộng dồn được → trần năng suất cho người chơi giỏi quy hoạch, và là nội dung "meta" để cộng đồng chia sẻ sơ đồ vườn chuẩn.
+c) Cấy ghép:
+
+Vườn ươm (cấy chuyền): khay ươm trong nhà gieo trước cây con từ cuối mùa trước (khay không tính mùa). Sang mùa mới đem cấy xuống đất → cây vào vụ sớm 20–30% thời gian, chơi được thêm gần 1 vụ mỗi mùa. Khay ươm có giới hạn chỗ (nâng cấp để mở rộng) → phải chọn cây nào đáng ưu tiên. Riêng cấy lúa có minigame cấy mạ thẳng hàng — cấy đều tay cả ruộng được buff +10%, bạn bè cùng online xuống ruộng cấy chung vui như hội.
+Ghép cành (bàn ghép, mở ở cấp cao): chọn gốc ghép quyết định sức chống chịu + cành ghép quyết định quả. Ví dụ: gốc cây dại chịu úng + cành xoài → xoài trồng được ở ô trũng mùa mưa; gốc chanh gai kháng sâu + cành cam → cam ít bệnh. Đây là lời giải "công nghệ cao" cho chính các mối đe dọa ở mục 5.
+Ghép 2 cành khác nhau trên 1 gốc → cây "2 trong 1" tiết kiệm đất, trông cực oách khi bạn bè ghé thăm.
+Tỷ lệ thành công phụ thuộc mùa (xuân dễ nhất), dụng cụ, và minigame cắt vát — thất bại mất cành, giữ gốc.
+Công thức ghép ẩn trong Nhật Ký Mùa Vàng; cành ghép từ cây trưởng thành có thể cắt tặng hoặc bán cho bạn bè → một người ghép được giống quý là cả đảo đến xin cành, đúng văn hóa làng quê.
+4.3 Chăn nuôi
+Gà, bò, heo, vịt, ong, cá (ao cá). Cho ăn bằng nông sản tự trồng → trứng, sữa, mật ong...
+Thú nuôi có tên, có "tâm trạng"; vuốt ve mỗi ngày tăng sản lượng. Bạn bè ghé chơi có thể vuốt ve giúp.
+Vật nuôi cũng là công cụ phòng chống: vịt thả ruộng ăn ốc sên, gà bắt sâu đất, mèo đuổi chuột kho thóc — chăn nuôi và trồng trọt móc nối thành hệ sinh thái.
+4.4 Chế biến
+Chuỗi sản xuất: Lúa mì → Bột → Bánh mì → Bánh kẹp (mỗi bậc giá trị tăng, thời gian chờ tăng).
+Máy móc: lò bánh, máy ép sữa, nồi ủ tương... Nâng cấp máy bằng nguyên liệu hiếm từ các khu vực đảo.
+Nhánh chế biến phòng trừ: bàn thảo dược nấu thuốc trừ sâu thảo mộc (tỏi + ớt + sả), ủ phân trộn tăng đề kháng cây — nguyên liệu tự trồng, tạo thêm lý do đa dạng hóa cây trồng.
+4.5 Xây dựng & trang trí
+Tự do sắp xếp nông trại trên lưới ô vuông. Hàng rào, đường đi, đèn lồng, chong chóng...
+Công trình phòng hộ (xem 5.3): mương thoát nước, luống cao, nhà kính, bù nhìn, đê chắn — chiếm đất và tốn tài nguyên, buộc người chơi cân nhắc giữa đất sản xuất và đất phòng thủ.
+Trang trí là flex: bạn bè nhìn thấy nông trại của nhau mỗi ngày → động lực trang trí rất mạnh.
+5. Độ khó: Sâu bệnh & Thiên tai ⚠️ (mới trong v0.2)
+Triết lý thiết kế: độ khó đến từ rủi ro có thể quản lý, không phải từ trừng phạt ngẫu nhiên. Người chơi luôn được cảnh báo trước và luôn có ít nhất 2 cách ứng phó (phòng từ xa hoặc chữa tại chỗ). Mất mùa phải là hậu quả của việc bỏ qua cảnh báo, không phải xui xẻo thuần túy.
+
+5.1 Côn trùng & sâu bệnh
+Cơ chế lây lan 3 giai đoạn trên từng ô đất:
+
+Chớm bệnh (đốm nhỏ, 1 ô)  →  Lan rộng (các ô liền kề)  →  Mất trắng vùng nhiễm
+   dễ xử lý, tap bắt sâu       cần thuốc/thiên địch         chỉ còn cách nhổ bỏ, đốt
+        ~4 giờ thực                 ~8 giờ thực              ô đất bị "ốm" 1 ngày
+Các loại dịch hại chính (theo mùa và theo cây):
+
+Dịch hại	Mùa	Nhắm vào	Cách trị đặc hiệu
+Rầy nâu	Hè	Lúa, ngô	Thuốc thảo mộc, thả vịt
+Ốc sên	Mưa	Rau lá	Nhặt tay (minigame), vịt
+Sâu đục quả	Thu	Cây ăn quả	Bọ rùa (thiên địch), bẫy đèn
+Chuột đồng	Đông	Kho thóc, củ	Mèo, bẫy
+Nấm mốc	Mưa	Mọi cây ở ô ngập	Thoát nước + thuốc nấm
+Châu chấu (sự kiện)	Hè, hiếm	Tất cả	Cả đảo cùng chống (xem 5.4)
+Yếu tố tăng/giảm tỷ lệ nhiễm:
+
+Tăng: độc canh, đất bạc màu, ô ngập nước, mật độ trồng dày, bỏ bê không thăm nông trại.
+Giảm: luân canh, phân trộn, hoa trồng xen (cúc vạn thọ đuổi rầy — như đời thật), thiên địch, vật nuôi thả vườn.
+Hai trường phái xử lý — trade-off có chủ đích:
+
+Thuốc mạnh (mua bằng Xu): diệt ngay 100%, nhưng ô đất giảm chất lượng đất và nông sản vụ đó tối đa chỉ đạt 2 sao → nhanh mà "ăn xổi".
+Sinh học (thiên địch, thuốc thảo mộc, luân canh): chậm hơn, cần chuẩn bị trước, nhưng giữ đất khỏe và giữ sao — đúng tinh thần "hồi sinh đảo" của cốt truyện. Nhật Ký Mùa Vàng mở dần các công thức sinh học như phần thưởng cốt truyện.
+Minigame bắt sâu: khi bệnh ở giai đoạn chớm, tap nhanh các con sâu đang bò trong 10 giây — vui, miễn phí, nhưng chỉ hiệu quả ở giai đoạn đầu. Bạn bè ghé thăm cũng bắt giúp được (tính điểm TLNX).
+
+5.2 Thời tiết & thiên tai theo mùa
+Mỗi mùa (1 tuần thực) có "nhịp đe dọa" riêng — người chơi lâu năm sẽ thuộc lịch và chuẩn bị trước như nông dân thật:
+
+Mùa	Thiên tai	Cơ chế	Cách phòng
+Xuân	Sương muối đầu vụ	1–2 đêm ngẫu nhiên, cây con non chết nếu không che	Che rơm (rẻ), nhà kính (đắt)
+Hè	Hạn hán + nắng cháy	Cây cần tưới gấp đôi; giếng riêng có giới hạn nước/ngày	Nâng cấp giếng, kênh dẫn nước, trữ nước mưa từ mùa trước
+Thu (mùa mưa)	Mưa dầm & ngập úng	Chi tiết bên dưới — mối đe dọa lớn nhất năm	Mương, luống cao, đê làng
+Đông	Rét đậm, tuyết trên núi	Cây ngoài trời ngừng lớn; vật nuôi cần chuồng ấm, tốn thức ăn dự trữ	Nhà kính, đèn sưởi, tích trữ từ mùa thu
+Mùa mưa — ngập úng (điểm nhấn độ khó):
+
+Trong tuần mùa mưa có 2–3 đợt mưa lớn (báo trước 12–24 giờ qua radio Già làng Tư).
+Khi mưa lớn, nước dâng theo bản đồ độ cao của nông trại: ô trũng ngập trước, lan dần. Cây bị ngập quá 4 giờ thực → úng, chết dần; ô ngập lâu sinh nấm mốc (dịch hại dây chuyền).
+Phòng: đào mương thoát nước (hướng dòng chảy về ao — ao đầy lại thành nước tưới cho mùa hè sau!), đắp luống cao cho ô trũng, trồng cây chịu nước (rau muống, sen) ở vùng thấp — biến bất lợi thành đặc sản mùa mưa.
+Chữa: khi đang ngập, dùng gàu tát nước (minigame), huy động bạn bè tát giúp.
+Mưa không chỉ là kẻ thù: ngày mưa nhỏ không cần tưới cây, nấm quý mọc ven rừng chỉ xuất hiện sau mưa → mùa mưa vẫn có "lộc trời" cho người biết tận dụng.
+Bão nhỏ ngẫu nhiên (quanh năm, hiếm): báo trước 6 giờ; làm tốc mái chuồng, đổ hàng rào, rụng quả non. Gia cố trước bằng đinh + gỗ thì giảm 80% thiệt hại. Sau bão có gỗ trôi dạt vào bãi biển — nhặt được tài nguyên hiếm.
+
+5.3 Công trình phòng hộ & hệ thống dự báo
+Cá nhân: mương thoát nước, luống cao, nhà kính (miễn nhiễm thời tiết nhưng đắt + chiếm đất), bù nhìn (đuổi chim ăn hạt mới gieo), kho chống chuột.
+Chung cả đảo (xây bằng điểm TLNX + tài nguyên góp):
+Đê chắn ven biển — giảm mức ngập toàn đảo trong mùa mưa.
+Trạm khí tượng — nâng dự báo từ "ngày mai có mưa lớn" thành lịch chính xác từng đợt trong 3 ngày.
+Tháp canh đồng — cảnh báo sớm dịch hại: hiện icon cảnh báo trên nông trại bạn bè để ai online trước thì xử lý giúp.
+Dự báo là tài nguyên thiết kế quan trọng: mọi thiên tai đều có tín hiệu trước (radio, mây đen kéo về, chim bay thấp...) để người chơi cảm thấy mình thua vì chủ quan, không phải vì game chơi xấu.
+5.4 Thảm họa co-op (sự kiện cả đảo)
+Đại dịch châu chấu (hè): đàn châu chấu tiến vào đảo trong 24 giờ thực. Cả đảo cùng góp: đốt lửa xua, căng lưới, thả đàn sáo. Đẩy lùi hoàn toàn → buff "Mùa vàng bội thu" 3 ngày; thất bại → mỗi nông trại mất ngẫu nhiên 20–40% hoa màu đang trồng (kho đã thu hoạch không mất).
+Lũ lớn (mùa mưa, 1 lần/mùa): nước dâng toàn đảo, hiệu quả phụ thuộc cấp độ Đê làng + số người tham gia đắp bao cát trong 12 giờ cảnh báo.
+Bão Xám trở lại (sự kiện đỉnh, mỗi mùa thật 1 lần, toàn server): như v0.1, nay có thêm lớp chuẩn bị cụ thể: gia cố, tích trữ lương thực vào Nhà kho làng, sơ tán vật nuôi lên vùng cao.
+5.5 Lưới an toàn — khó nhưng không nghiệt ngã
+3 ngày đầu (người mới): đảo được "Đom Đóm Vàng che chở" — không thiên tai, sâu bệnh chỉ ở mức minigame nhẹ để học cơ chế.
+Bảo hiểm mùa màng: mua từ Thương nhân Hải Âu (Xu, giá ~10% giá trị vụ mùa) — mất mùa được đền 50% giá bán. Có cả bảo hiểm nhóm giá rẻ hơn khi cả đảo cùng mua.
+Không mất trắng tuyệt đối: cây chết úng/chết bệnh nhổ lên thành phân ủ + trả lại một phần hạt giống.
+Độ khó leo thang theo cấp: cấp thấp thiên tai nhẹ và thưa; mở khu vực đảo mới thì đe dọa mới xuất hiện — người chơi không bao giờ gặp thứ mình chưa được dạy cách chống.
+Chế độ "Nông nhàn" (tùy chọn khi tạo nông trại): giảm 50% tần suất thiên tai, đổi lại giảm 25% giá bán — cho người chỉ muốn chill, không ảnh hưởng kinh tế chung.
+6. Chơi online với bạn bè ⭐ (trái tim của game)
+6.1 Mô hình "Đảo chung"
+Một Đảo = 1 nhóm 2–10 người chơi (bạn bè mời nhau bằng mã/link, hoặc ghép ngẫu nhiên nếu chơi một mình).
+Mỗi người sở hữu một mảnh đất riêng trên đảo (quyền xây/trồng chỉ của chủ đất), nhưng đi lại tự do khắp đảo, thấy nhân vật của nhau di chuyển real-time khi cùng online.
+Khu trung tâm đảo là đất chung: giếng nước, chợ, nhà kho làng, bến thuyền, đê, trạm khí tượng — do cả nhóm góp tài nguyên xây dựng và nâng cấp.
+6.2 Hoạt động cùng nhau
+Hoạt động	Mô tả
+Giúp việc	Tưới cây, thu hoạch, cho thú ăn, bắt sâu, tát nước, gia cố trước bão giúp bạn khi bạn offline (giới hạn lượt/ngày)
+Đơn hàng làng	Thuyền lớn cập bến mỗi 2 ngày với đơn hàng khổng lồ — cả đảo góp hàng, thưởng chia theo đóng góp
+Chợ phiên	Mua bán nông sản trực tiếp giữa người chơi trong đảo (giá tự thỏa thuận) — sau thiên tai, chợ phiên là nơi cứu nhau: người thiệt hại nhẹ bán lại giống, lương thực cho người mất mùa
+Tặng quà	Mỗi ngày tặng được 3 món cho bạn bè
+Nấu chung	Món ăn đặc biệt cần nguyên liệu từ 2–3 người chơi khác nhau cùng bỏ vào nồi lẩu làng
+Câu cá đối kháng	Mini-game câu cá 1v1 vui nhộn khi cả hai cùng online
+6.3 Tình Làng Nghĩa Xóm (điểm xã hội)
+Mọi hành động giúp đỡ sinh ra điểm TLNX; hành động cứu mùa màng (bắt sâu, tát nước, đắp bao cát) được x2 điểm — game thưởng đậm cho "tối lửa tắt đèn có nhau".
+Điểm TLNX mở khóa công trình chung (gồm cả công trình phòng hộ ở 5.3) và tăng cấp độ Đảo → mở khu vực mới trong cốt truyện.
+Thiết kế chống toxic: không có cướp/phá hoại nông trại người khác, không thể "lây" sâu bệnh sang đất bạn bè. Cạnh tranh chỉ qua bảng xếp hạng thân thiện.
+6.4 Sự kiện theo mùa (server-wide)
+Mỗi mùa thật có 1 sự kiện lớn: Lễ hội Trăng Rằm, Đua Bí Ngô Khổng Lồ, và đỉnh điểm là Bão Xám trở lại (xem 5.4).
+6.5 Chơi một mình vẫn ổn
+Game không ép buộc social: chơi solo vẫn đầy đủ nội dung, chỉ chậm hơn ở các công trình chung, và các thảm họa co-op được scale theo số người trên đảo (đảo 1 người gặp đàn châu chấu nhỏ hơn đảo 10 người).
+7. Tiến trình & giữ chân người chơi
+Cấp độ người chơi (kinh nghiệm từ mọi hoạt động) → mở giống cây, máy móc, trang trí, công trình phòng hộ.
+Cấp độ Đảo (điểm TLNX chung) → mở khu vực mới, cốt truyện mới.
+Nhật Ký Mùa Vàng = sổ sưu tầm/achievement: sưu tập nông sản 3 sao, cá hiếm, công thức nấu ăn, "bí kíp nhà nông" (mẹo chống từng loại dịch hại mở ra khi lần đầu vượt qua nó, cặp xen canh mở ra khi lần đầu trồng cạnh nhau, công thức ghép cành ẩn theo cốt truyện) — mỗi trang hoàn thành kể thêm một mẩu chuyện của ông bà.
+Bậc thầy canh tác: mỗi loại cây có thanh "tay nghề" (trồng nhiều lên bậc) — bậc cao mở mô tả ẩn (khung giờ tưới vàng, điểm thu hoạch dưa chuẩn) → người chơi lâu năm giỏi thật sự chứ không chỉ to kho.
+Danh hiệu mùa vụ: "Vua chống lũ", "Khắc tinh châu chấu"... gắn trên tên nhân vật, reset theo mùa → đua thân thiện giữa các đảo.
+Nhiệm vụ ngày/tuần + phần thưởng đăng nhập chuỗi.
+8. Kinh tế & kiếm tiền (không pay-to-win)
+Miễn phí tải, có quảng cáo tùy chọn (xem ad để tăng tốc 1 nồi nấu, x2 thưởng đơn hàng — người chơi chủ động chọn).
+IAP:
+Tiền tệ cao cấp (Ngọc Trai) → chủ yếu mua trang trí, skin nhân vật, skin thú nuôi.
+Battle/Season Pass theo mùa (~99k VND): phần thưởng trang trí giới hạn + tiện ích nhẹ.
+Không bán sức mạnh canh tác trực tiếp. Nguyên tắc cứng cho hệ độ khó: không bán "miễn nhiễm thiên tai" hay thuốc trừ sâu bằng tiền thật — mọi công cụ phòng chống đều kiếm được bằng chơi; Ngọc Trai chỉ tăng tốc xây công trình phòng hộ với giới hạn ngày. Thiên tai mà né được bằng ví tiền thì phần hay nhất của game chết.
+Kinh tế trong game: 1 tiền tệ thường (Xu); giá thương nhân Hải Âu dao động theo ngày và theo thiên tai — sau đợt lũ toàn server, giá rau tăng vọt vài ngày → người phòng thủ tốt trúng lớn, đúng quy luật cung cầu thật.
+9. Hình ảnh & âm thanh
+9.1 Góc nhìn & camera (chốt theo Hay Day) 📐 (mới trong v0.4)
+Camera trên cao nhìn xuống, nghiêng nhẹ (high-angle top-down, kiểu isometric Hay Day): thấy cả mặt trên lẫn mặt trước của nhà cửa, cây cối; nhân vật chibi đi lại giữa các luống đất.
+Màn hình ngang cố định — nông trại trải rộng theo chiều ngang, hợp với cầm máy hai tay, hai ngón cái thao tác hai bên mép màn hình.
+Lưới ô thoi (isometric 2:1): mỗi ô đất là một ô thoi như Hay Day; ô cao/ô trũng thể hiện bằng nấc địa hình nhìn thấy rõ — nước mùa lũ dâng theo nấc là đọc được ngay bằng mắt.
+Tương tác chuẩn Hay Day: chạm-giữ-kéo để gieo cả luống một đường quét tay; chạm nhà máy mở vòng công thức; kéo nông sản thả vào đơn hàng.
+Camera: kéo thả tự do trong ranh giới đảo, pinch zoom 3 mức (sát nông trại ↔ thấy cả mảnh đất ↔ thấy toàn đảo và nông trại hàng xóm); double-tap về nhà chính của mình.
+UI landscape: đơn hàng/thuyền dọc mép trái, kho + tiền tệ góc trên phải, avatar bạn bè trên đảo xếp dọc mép phải (chạm để bay sang nông trại họ), nút sự kiện/dự báo thời tiết góc trên trái cạnh radio.
+9.2 Phong cách
+Phong cách: 2D hoạt hình ấm áp, màu pastel đậm chất nhiệt đới Đông Nam Á (dừa, ruộng bậc thang, đèn lồng, nón lá).
+Nhân vật chibi tỉ lệ 2 đầu, biểu cảm to rõ, animation vui nhộn khi thu hoạch/vấp ngã/trượt chân trong ruộng ngập.
+Thời tiết phải "đã mắt": màn mưa nghiêng theo gió, nước dâng loang theo ô trũng, đàn châu chấu rợp trời như bóng mây — thiên tai đáng sợ ở cảm giác, không ở sự bất công.
+Nhạc nền acoustic nhẹ (đàn tranh + guitar), đổi theo mùa; tiếng mưa, tiếng gà gáy theo giờ thực; tiếng radio rè rè của Già làng Tư mỗi sáng là âm thanh thương hiệu của game.
+10. Kỹ thuật (đã chốt: web, không dùng Unity)
+Lớp	Lựa chọn	Lý do
+Client	Web game (HTML5) — TypeScript + Phaser 3, build bằng Vite	Chạy ngay trên trình duyệt điện thoại, không cần cài app; một codebase cho mọi máy; Phaser có sẵn camera drag/zoom, sprite atlas, tilemap, âm thanh
+Đóng gói mobile	PWA (chơi ngay + Add to Home Screen) → Capacitor khi phát hành App Store/Google Play	Giữ nguyên code web, bọc native khi cần lên store; cập nhật game không chờ duyệt store
+Màn chơi 2D	Lưới isometric 2:1 tự dựng trên Phaser (depth sort theo Y)	Demo HUD hiện tại chính là nguyên mẫu thao tác; chuyển thẳng logic sang Phaser
+Backend realtime	Colyseus (Node.js/TypeScript) — cùng ngôn ngữ với client; Nakama là phương án dự phòng	Phòng (đảo), đồng bộ state, matchmaker; một ngôn ngữ TypeScript cho cả client lẫn server
+Mô hình mạng	Async-first + realtime khi cùng online	Farm game chủ yếu là async; chỉ cần realtime cho vị trí nhân vật, chat và thảm họa co-op
+Mô phỏng thiên tai/sâu bệnh	Server-side simulation theo tick (vd. 5 phút/tick cho lây lan, lịch thời tiết sinh trước cả mùa trên server)	Chống gian lận chỉnh giờ máy; mọi người trên đảo thấy cùng một cơn mưa, cùng một ổ dịch
+Database	PostgreSQL	Giao dịch kinh tế cần ACID
+Chống gian lận	Mọi logic kinh tế + thiên tai xử lý server-side, client chỉ render	Game có giao dịch giữa người chơi nên bắt buộc
+11. Lộ trình MVP
+Giai đoạn 1 — Nông trại solo (lõi): màn chơi isometric landscape (lưới ô thoi, kéo-thả camera, pinch zoom, thao tác quét tay gieo/thu hoạch kiểu Hay Day), trồng/thu hoạch/bán, 10 cây trồng, 2 vật nuôi, xây dựng cơ bản, lưu cloud. Kèm sâu bệnh dạng đơn giản nhất (1 loại sâu + minigame bắt sâu) và luân canh cơ bản (ô nhớ vụ trước, buff khác nhóm) — độ khó và chiều sâu canh tác phải nằm trong lõi game từ đầu, không phải tính năng gắn thêm.
+Giai đoạn 2 — Thời tiết & mùa: 4 mùa (1 tuần = 1 mùa), lịch cây trồng theo mùa, lịch thời tiết server-side, mùa mưa + ngập úng theo độ cao, mương/luống cao, dự báo radio, bảo hiểm. Kèm xen canh (buff ô liền kề) và vườn ươm cấy chuyền — hai kỹ thuật gắn chặt với nhịp mùa.
+Giai đoạn 3 — Online nền tảng: tài khoản, đảo + mời bạn, thăm nông trại, giúp việc async (gồm bắt sâu/tát nước giúp), tặng quà.
+Giai đoạn 4 — Social sâu: đơn hàng làng, công trình chung (đê, trạm khí tượng), chợ phiên, chat, realtime cùng online, thảm họa co-op đầu tiên (lũ).
+Giai đoạn 5 — Nội dung & LiveOps: cốt truyện theo khu vực, đủ bộ dịch hại theo mùa, ghép cành + công thức ẩn trong Nhật Ký, sự kiện châu chấu + Bão Xám, season pass.
+Mọi tên riêng (game, NPC, đảo) đều là đề xuất — đổi thoải mái. Phần nào bạn muốn đào sâu hơn (số liệu cân bằng kinh tế, chi tiết từng minigame, hay kiến trúc kỹ thuật) thì mình viết tiếp phần đó.

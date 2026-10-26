@@ -1,0 +1,7 @@
+{
+  "style": "short-sleeve cotton T-shirt and tapered full-length trousers",
+  "garmentMeshes": 4,
+  "garmentTriangles": 25680,
+  "hiddenBodyTriangles": 22480,
+  "skinWeights": "interpolated from body; same 49-bone rig"
+}

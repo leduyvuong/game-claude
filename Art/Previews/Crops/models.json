@@ -1,0 +1,254 @@
+{
+    "crops": [
+        {
+            "name": "Rice",
+            "label": "Lúa",
+            "stages": [
+                "Mầm non",
+                "Cây non",
+                "Phát triển thân lá",
+                "Hoa / quả non / gần trưởng thành",
+                "Sẵn sàng thu hoạch"
+            ],
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Crops/Rice/Rice_1.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Rice/Rice_2.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Rice/Rice_3.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Rice/Rice_4.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Rice/Rice_5.prefab"
+            ],
+            "triangles": [
+                272,
+                768,
+                960,
+                5328,
+                6216
+            ]
+        },
+        {
+            "name": "Carrot",
+            "label": "Cà rốt",
+            "stages": [
+                "Mầm non",
+                "Cây non",
+                "Phát triển thân lá",
+                "Hoa / quả non / gần trưởng thành",
+                "Sẵn sàng thu hoạch"
+            ],
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Crops/Carrot/Carrot_1.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Carrot/Carrot_2.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Carrot/Carrot_3.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Carrot/Carrot_4.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Carrot/Carrot_5.prefab"
+            ],
+            "triangles": [
+                1752,
+                3016,
+                4184,
+                5352,
+                6520
+            ]
+        },
+        {
+            "name": "Corn",
+            "label": "Ngô",
+            "stages": [
+                "Mầm non",
+                "Cây non",
+                "Phát triển thân lá",
+                "Hoa / quả non / gần trưởng thành",
+                "Sẵn sàng thu hoạch"
+            ],
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Crops/Corn/Corn_1.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Corn/Corn_2.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Corn/Corn_3.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Corn/Corn_4.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Corn/Corn_5.prefab"
+            ],
+            "triangles": [
+                264,
+                344,
+                408,
+                1536,
+                4300
+            ]
+        },
+        {
+            "name": "Pumpkin",
+            "label": "Bí đỏ",
+            "stages": [
+                "Mầm non",
+                "Cây non",
+                "Phát triển thân lá",
+                "Hoa / quả non / gần trưởng thành",
+                "Sẵn sàng thu hoạch"
+            ],
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Crops/Pumpkin/Pumpkin_1.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Pumpkin/Pumpkin_2.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Pumpkin/Pumpkin_3.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Pumpkin/Pumpkin_4.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Pumpkin/Pumpkin_5.prefab"
+            ],
+            "triangles": [
+                180,
+                696,
+                1048,
+                2086,
+                2792
+            ]
+        },
+        {
+            "name": "Greens",
+            "label": "Cải ngọt",
+            "stages": [
+                "Mầm non",
+                "Cây non",
+                "Phát triển thân lá",
+                "Hoa / quả non / gần trưởng thành",
+                "Sẵn sàng thu hoạch"
+            ],
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Crops/Greens/Greens_1.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Greens/Greens_2.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Greens/Greens_3.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Greens/Greens_4.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Greens/Greens_5.prefab"
+            ],
+            "triangles": [
+                236,
+                396,
+                548,
+                692,
+                844
+            ]
+        },
+        {
+            "name": "Tomato",
+            "label": "Cà chua",
+            "stages": [
+                "Mầm non",
+                "Cây non",
+                "Phát triển thân lá",
+                "Hoa / quả non / gần trưởng thành",
+                "Sẵn sàng thu hoạch"
+            ],
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Crops/Tomato/Tomato_1.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Tomato/Tomato_2.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Tomato/Tomato_3.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Tomato/Tomato_4.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Tomato/Tomato_5.prefab"
+            ],
+            "triangles": [
+                180,
+                1064,
+                1328,
+                5940,
+                4624
+            ]
+        },
+        {
+            "name": "Onion",
+            "label": "Hành",
+            "stages": [
+                "Mầm non",
+                "Cây non",
+                "Phát triển thân lá",
+                "Hoa / quả non / gần trưởng thành",
+                "Sẵn sàng thu hoạch"
+            ],
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Crops/Onion/Onion_1.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Onion/Onion_2.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Onion/Onion_3.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Onion/Onion_4.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Onion/Onion_5.prefab"
+            ],
+            "triangles": [
+                84,
+                114,
+                288,
+                522,
+                816
+            ]
+        },
+        {
+            "name": "Beans",
+            "label": "Đậu leo",
+            "stages": [
+                "Mầm non",
+                "Cây non",
+                "Phát triển thân lá",
+                "Hoa / quả non / gần trưởng thành",
+                "Sẵn sàng thu hoạch"
+            ],
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Crops/Beans/Beans_1.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Beans/Beans_2.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Beans/Beans_3.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Beans/Beans_4.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Beans/Beans_5.prefab"
+            ],
+            "triangles": [
+                300,
+                1348,
+                1944,
+                4000,
+                4376
+            ]
+        },
+        {
+            "name": "Watermelon",
+            "label": "Dưa hấu",
+            "stages": [
+                "Mầm non",
+                "Cây non",
+                "Phát triển thân lá",
+                "Hoa / quả non / gần trưởng thành",
+                "Sẵn sàng thu hoạch"
+            ],
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Crops/Watermelon/Watermelon_1.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Watermelon/Watermelon_2.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Watermelon/Watermelon_3.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Watermelon/Watermelon_4.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Watermelon/Watermelon_5.prefab"
+            ],
+            "triangles": [
+                180,
+                696,
+                1048,
+                2086,
+                2792
+            ]
+        },
+        {
+            "name": "Sugarcane",
+            "label": "Mía",
+            "stages": [
+                "Mầm non",
+                "Cây non",
+                "Phát triển thân lá",
+                "Hoa / quả non / gần trưởng thành",
+                "Sẵn sàng thu hoạch"
+            ],
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Crops/Sugarcane/Sugarcane_1.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Sugarcane/Sugarcane_2.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Sugarcane/Sugarcane_3.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Sugarcane/Sugarcane_4.prefab",
+                "Assets/HarvestIsle/Resources/Crops/Sugarcane/Sugarcane_5.prefab"
+            ],
+            "triangles": [
+                184,
+                288,
+                1176,
+                1984,
+                3000
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+ReferenceFemale — adult female reference study
+
+Anatomical base mesh, female morph targets, eyes, rig and original skin weights:
+MakeHuman Community, CC0 1.0 Universal graphical assets.
+https://github.com/makehumancommunity/makehuman
+Pinned revision: a8bc2d54ff0ac92e78ff71431b1023eda42bf482
+Complete license and source data: Design/References/MakeHuman/
+SHA-256 hashes: source-manifest.json in that directory.
+The four female morphs additionally match the pinned Git blob hashes.
+
+Adaptation: 60% Asian / 40% Caucasian adult female morph, moderate muscle,
+reference-oriented head proportions, fitted eyes and thinner eyebrows.
+Clothed mesh: coral cotton T-shirt and navy trousers; fitted panels, opening
+trims and covered body-face removal. The shirt smooths small anatomical detail.
+49-bone skin; the shared 11-action motion study has female reach adjustments.
+Gray clay skin is retained for comparison with the male reference study.
+
+Build: python Tools/build_reference_female.py (numpy, scipy).
+Missing source data: python Tools/fetch_reference_female_sources.py.
+Unity: Harvest Isle > Characters > Build and capture reference female motions.
+Reference images: Design/References/Anh_tham_chieu_nhan_vat_nam_nu/Nu/
+
+Separate prototype, not a replacement for the game characters.
+No cloth simulation, terrain IK, mobile optimization or gameplay integration.

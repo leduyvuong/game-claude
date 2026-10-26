@@ -1,0 +1,235 @@
+{
+    "models": [
+        {
+            "name": "GrassTile",
+            "label": "Đất cỏ",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/GrassTile.prefab",
+            "triangles": 1162
+        },
+        {
+            "name": "DirtTile",
+            "label": "Đất khô",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/DirtTile.prefab",
+            "triangles": 5184
+        },
+        {
+            "name": "WetDirtTile",
+            "label": "Đất ẩm",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/WetDirtTile.prefab",
+            "triangles": 5184
+        },
+        {
+            "name": "SandTile",
+            "label": "Bãi cát",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/SandTile.prefab",
+            "triangles": 1162
+        },
+        {
+            "name": "RaisedBed",
+            "label": "Luống cao",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/RaisedBed.prefab",
+            "triangles": 140
+        },
+        {
+            "name": "Shoreline",
+            "label": "Bờ nước thẳng",
+            "group": "Nước",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/Shoreline.prefab",
+            "triangles": 648
+        },
+        {
+            "name": "ShoreCorner",
+            "label": "Bờ nước cong",
+            "group": "Nước",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/ShoreCorner.prefab",
+            "triangles": 648
+        },
+        {
+            "name": "WaterTile",
+            "label": "Mặt nước",
+            "group": "Nước",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/WaterTile.prefab",
+            "triangles": 128
+        },
+        {
+            "name": "RockSmall",
+            "label": "Đá nhỏ",
+            "group": "Đá",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/RockSmall.prefab",
+            "triangles": 35
+        },
+        {
+            "name": "RockLarge",
+            "label": "Tảng đá",
+            "group": "Đá",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/RockLarge.prefab",
+            "triangles": 35
+        },
+        {
+            "name": "RockCluster",
+            "label": "Cụm đá",
+            "group": "Đá",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/RockCluster.prefab",
+            "triangles": 105
+        },
+        {
+            "name": "Pond",
+            "label": "Ao nhỏ",
+            "group": "Ao hồ",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/Pond.prefab",
+            "triangles": 1000
+        },
+        {
+            "name": "Lake",
+            "label": "Hồ",
+            "group": "Ao hồ",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/Lake.prefab",
+            "triangles": 1327
+        },
+        {
+            "name": "Hill",
+            "label": "Đồi cỏ",
+            "group": "Núi",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/Hill.prefab",
+            "triangles": 3044
+        },
+        {
+            "name": "Mountain",
+            "label": "Núi",
+            "group": "Núi",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/Mountain.prefab",
+            "triangles": 3072
+        },
+        {
+            "name": "MountainRange",
+            "label": "Dãy núi",
+            "group": "Núi",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/MountainRange.prefab",
+            "triangles": 9152
+        },
+        {
+            "name": "IslandBase",
+            "label": "Nền đảo",
+            "group": "Đảo",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/IslandBase.prefab",
+            "triangles": 14350
+        },
+        {
+            "name": "SeaSurface",
+            "label": "Mặt biển",
+            "group": "Nước",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/SeaSurface.prefab",
+            "triangles": 128
+        },
+        {
+            "name": "RedEarthTile",
+            "label": "Đất đỏ bazan",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/RedEarthTile.prefab",
+            "triangles": 1162
+        },
+        {
+            "name": "AlluvialTile",
+            "label": "Đất phù sa",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/AlluvialTile.prefab",
+            "triangles": 1162
+        },
+        {
+            "name": "HumusTile",
+            "label": "Đất mùn",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/HumusTile.prefab",
+            "triangles": 1162
+        },
+        {
+            "name": "GravelTile",
+            "label": "Đất sỏi",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/GravelTile.prefab",
+            "triangles": 2002
+        },
+        {
+            "name": "MeadowTile",
+            "label": "Thảm cỏ mọc",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/MeadowTile.prefab",
+            "triangles": 1842
+        },
+        {
+            "name": "FlowerMeadowTile",
+            "label": "Đồng hoa dại",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/FlowerMeadowTile.prefab",
+            "triangles": 3872
+        },
+        {
+            "name": "ForestFloorTile",
+            "label": "Nền rừng",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/ForestFloorTile.prefab",
+            "triangles": 2018
+        },
+        {
+            "name": "DryGrassTile",
+            "label": "Cỏ khô",
+            "group": "Đất",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/DryGrassTile.prefab",
+            "triangles": 1842
+        },
+        {
+            "name": "RainTree",
+            "label": "Cây me tây tán rộng",
+            "group": "Thiên nhiên",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/RainTree.prefab",
+            "triangles": 2312
+        },
+        {
+            "name": "BanyanTree",
+            "label": "Cây đa rễ buông",
+            "group": "Thiên nhiên",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/BanyanTree.prefab",
+            "triangles": 2672
+        },
+        {
+            "name": "PineTree",
+            "label": "Cây thông",
+            "group": "Thiên nhiên",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/PineTree.prefab",
+            "triangles": 432
+        },
+        {
+            "name": "WillowTree",
+            "label": "Cây liễu rủ",
+            "group": "Thiên nhiên",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/WillowTree.prefab",
+            "triangles": 5322
+        },
+        {
+            "name": "FlameTree",
+            "label": "Cây phượng",
+            "group": "Thiên nhiên",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/FlameTree.prefab",
+            "triangles": 2312
+        },
+        {
+            "name": "ArecaPalm",
+            "label": "Cây cau",
+            "group": "Thiên nhiên",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/ArecaPalm.prefab",
+            "triangles": 1548
+        },
+        {
+            "name": "YoungForestTree",
+            "label": "Cây rừng non",
+            "group": "Thiên nhiên",
+            "prefab": "Assets/HarvestIsle/Resources/Environment/YoungForestTree.prefab",
+            "triangles": 1352
+        }
+    ]
+}

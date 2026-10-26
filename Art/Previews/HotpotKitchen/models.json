@@ -1,0 +1,797 @@
+{
+    "version": 1,
+    "prefabCount": 605,
+    "models": [
+        {
+            "id": "HP_KC_GasStove",
+            "label": "Bếp gas mini",
+            "group": "Dụng cụ lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_GasStove.prefab",
+                    "resource": "HotpotKitchen/HP_KC_GasStove",
+                    "preview": "../Library/HP_KC_GasStove_1.png",
+                    "views": "../Library/HP_KC_GasStove_1-views.png",
+                    "triangles": 3240
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Induction",
+            "label": "Bếp từ",
+            "group": "Dụng cụ lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Induction.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Induction",
+                    "preview": "../Library/HP_KC_Induction_1.png",
+                    "views": "../Library/HP_KC_Induction_1-views.png",
+                    "triangles": 1404
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_SteelPot",
+            "label": "Nồi inox",
+            "group": "Dụng cụ lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_SteelPot.prefab",
+                    "resource": "HotpotKitchen/HP_KC_SteelPot",
+                    "preview": "../Library/HP_KC_SteelPot_1.png",
+                    "views": "../Library/HP_KC_SteelPot_1-views.png",
+                    "triangles": 816
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_YinYangPot",
+            "label": "Nồi song vị",
+            "group": "Dụng cụ lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_YinYangPot.prefab",
+                    "resource": "HotpotKitchen/HP_KC_YinYangPot",
+                    "preview": "../Library/HP_KC_YinYangPot_1.png",
+                    "views": "../Library/HP_KC_YinYangPot_1-views.png",
+                    "triangles": 1056
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_FourPot",
+            "label": "Nồi bốn ngăn",
+            "group": "Dụng cụ lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_FourPot.prefab",
+                    "resource": "HotpotKitchen/HP_KC_FourPot",
+                    "preview": "../Library/HP_KC_FourPot_1.png",
+                    "views": "../Library/HP_KC_FourPot_1-views.png",
+                    "triangles": 576
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_ClayPot",
+            "label": "Nồi đất",
+            "group": "Dụng cụ lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_ClayPot.prefab",
+                    "resource": "HotpotKitchen/HP_KC_ClayPot",
+                    "preview": "../Library/HP_KC_ClayPot_1.png",
+                    "views": "../Library/HP_KC_ClayPot_1-views.png",
+                    "triangles": 816
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Lid",
+            "label": "Nắp nồi",
+            "group": "Dụng cụ lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Lid.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Lid",
+                    "preview": "../Library/HP_KC_Lid_1.png",
+                    "views": "../Library/HP_KC_Lid_1-views.png",
+                    "triangles": 1168
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_StockPot",
+            "label": "Nồi hầm và nắp",
+            "group": "Dụng cụ lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_StockPot.prefab",
+                    "resource": "HotpotKitchen/HP_KC_StockPot",
+                    "preview": "../Library/HP_KC_StockPot_1.png",
+                    "views": "../Library/HP_KC_StockPot_1-views.png",
+                    "triangles": 1984
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Ladle",
+            "label": "Vá múc",
+            "group": "Dụng cụ lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Ladle.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Ladle",
+                    "preview": "../Library/HP_KC_Ladle_1.png",
+                    "views": "../Library/HP_KC_Ladle_1-views.png",
+                    "triangles": 624
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Skimmer",
+            "label": "Vá vớt",
+            "group": "Dụng cụ lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Skimmer.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Skimmer",
+                    "preview": "../Library/HP_KC_Skimmer_1.png",
+                    "views": "../Library/HP_KC_Skimmer_1-views.png",
+                    "triangles": 3360
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Tongs",
+            "label": "Kẹp gắp",
+            "group": "Dụng cụ lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Tongs.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Tongs",
+                    "preview": "../Library/HP_KC_Tongs_1.png",
+                    "views": "../Library/HP_KC_Tongs_1-views.png",
+                    "triangles": 3512
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_PlaceSetting",
+            "label": "Bát và đũa",
+            "group": "Dụng cụ lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_PlaceSetting.prefab",
+                    "resource": "HotpotKitchen/HP_KC_PlaceSetting",
+                    "preview": "../Library/HP_KC_PlaceSetting_1.png",
+                    "views": "../Library/HP_KC_PlaceSetting_1-views.png",
+                    "triangles": 2040
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_BeefRolls",
+            "label": "Khay bò cuộn",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_BeefRolls.prefab",
+                    "resource": "HotpotKitchen/HP_KC_BeefRolls",
+                    "preview": "../Library/HP_KC_BeefRolls_1.png",
+                    "views": "../Library/HP_KC_BeefRolls_1-views.png",
+                    "triangles": 5616
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_PorkRolls",
+            "label": "Khay ba chỉ cuộn",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_PorkRolls.prefab",
+                    "resource": "HotpotKitchen/HP_KC_PorkRolls",
+                    "preview": "../Library/HP_KC_PorkRolls_1.png",
+                    "views": "../Library/HP_KC_PorkRolls_1-views.png",
+                    "triangles": 5616
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Chicken",
+            "label": "Đĩa thịt gà",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Chicken.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Chicken",
+                    "preview": "../Library/HP_KC_Chicken_1.png",
+                    "views": "../Library/HP_KC_Chicken_1-views.png",
+                    "triangles": 4144
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Fish",
+            "label": "Đĩa cá phi lê",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Fish.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Fish",
+                    "preview": "../Library/HP_KC_Fish_1.png",
+                    "views": "../Library/HP_KC_Fish_1-views.png",
+                    "triangles": 8752
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Shrimp",
+            "label": "Đĩa tôm",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Shrimp.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Shrimp",
+                    "preview": "../Library/HP_KC_Shrimp_1.png",
+                    "views": "../Library/HP_KC_Shrimp_1-views.png",
+                    "triangles": 12720
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Squid",
+            "label": "Đĩa mực",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Squid.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Squid",
+                    "preview": "../Library/HP_KC_Squid_1.png",
+                    "views": "../Library/HP_KC_Squid_1-views.png",
+                    "triangles": 5136
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Mussels",
+            "label": "Đĩa vẹm",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Mussels.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Mussels",
+                    "preview": "../Library/HP_KC_Mussels_1.png",
+                    "views": "../Library/HP_KC_Mussels_1-views.png",
+                    "triangles": 8304
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Meatballs",
+            "label": "Viên thả lẩu",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Meatballs.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Meatballs",
+                    "preview": "../Library/HP_KC_Meatballs_1.png",
+                    "views": "../Library/HP_KC_Meatballs_1-views.png",
+                    "triangles": 8880
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Tofu",
+            "label": "Đậu phụ",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Tofu.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Tofu",
+                    "preview": "../Library/HP_KC_Tofu_1.png",
+                    "views": "../Library/HP_KC_Tofu_1-views.png",
+                    "triangles": 5472
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_TofuSkin",
+            "label": "Tàu hũ ky cuộn",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_TofuSkin.prefab",
+                    "resource": "HotpotKitchen/HP_KC_TofuSkin",
+                    "preview": "../Library/HP_KC_TofuSkin_1.png",
+                    "views": "../Library/HP_KC_TofuSkin_1-views.png",
+                    "triangles": 14400
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Enoki",
+            "label": "Nấm kim châm",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Enoki.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Enoki",
+                    "preview": "../Library/HP_KC_Enoki_1.png",
+                    "views": "../Library/HP_KC_Enoki_1-views.png",
+                    "triangles": 26464
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Shiitake",
+            "label": "Nấm hương",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Shiitake.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Shiitake",
+                    "preview": "../Library/HP_KC_Shiitake_1.png",
+                    "views": "../Library/HP_KC_Shiitake_1-views.png",
+                    "triangles": 3720
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_OysterMushrooms",
+            "label": "Nấm bào ngư",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_OysterMushrooms.prefab",
+                    "resource": "HotpotKitchen/HP_KC_OysterMushrooms",
+                    "preview": "../Library/HP_KC_OysterMushrooms_1.png",
+                    "views": "../Library/HP_KC_OysterMushrooms_1-views.png",
+                    "triangles": 11168
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_NapaCabbage",
+            "label": "Cải thảo",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_NapaCabbage.prefab",
+                    "resource": "HotpotKitchen/HP_KC_NapaCabbage",
+                    "preview": "../Library/HP_KC_NapaCabbage_1.png",
+                    "views": "../Library/HP_KC_NapaCabbage_1-views.png",
+                    "triangles": 10464
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_WaterSpinach",
+            "label": "Rau muống",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_WaterSpinach.prefab",
+                    "resource": "HotpotKitchen/HP_KC_WaterSpinach",
+                    "preview": "../Library/HP_KC_WaterSpinach_1.png",
+                    "views": "../Library/HP_KC_WaterSpinach_1-views.png",
+                    "triangles": 18144
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_BokChoy",
+            "label": "Cải thìa",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_BokChoy.prefab",
+                    "resource": "HotpotKitchen/HP_KC_BokChoy",
+                    "preview": "../Library/HP_KC_BokChoy_1.png",
+                    "views": "../Library/HP_KC_BokChoy_1-views.png",
+                    "triangles": 11680
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Corn",
+            "label": "Khoanh ngô",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Corn.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Corn",
+                    "preview": "../Library/HP_KC_Corn_1.png",
+                    "views": "../Library/HP_KC_Corn_1-views.png",
+                    "triangles": 25200
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Tomatoes",
+            "label": "Cà chua bổ múi",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Tomatoes.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Tomatoes",
+                    "preview": "../Library/HP_KC_Tomatoes_1.png",
+                    "views": "../Library/HP_KC_Tomatoes_1-views.png",
+                    "triangles": 9232
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_EggNoodles",
+            "label": "Mì trứng",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_EggNoodles.prefab",
+                    "resource": "HotpotKitchen/HP_KC_EggNoodles",
+                    "preview": "../Library/HP_KC_EggNoodles_1.png",
+                    "views": "../Library/HP_KC_EggNoodles_1-views.png",
+                    "triangles": 4200
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_RiceNoodles",
+            "label": "Bún gạo",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_RiceNoodles.prefab",
+                    "resource": "HotpotKitchen/HP_KC_RiceNoodles",
+                    "preview": "../Library/HP_KC_RiceNoodles_1.png",
+                    "views": "../Library/HP_KC_RiceNoodles_1-views.png",
+                    "triangles": 4200
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Sauces",
+            "label": "Bộ ba nước chấm",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Sauces.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Sauces",
+                    "preview": "../Library/HP_KC_Sauces_1.png",
+                    "views": "../Library/HP_KC_Sauces_1-views.png",
+                    "triangles": 6060
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_ChiliGarlic",
+            "label": "Ớt và tỏi băm",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_ChiliGarlic.prefab",
+                    "resource": "HotpotKitchen/HP_KC_ChiliGarlic",
+                    "preview": "../Library/HP_KC_ChiliGarlic_1.png",
+                    "views": "../Library/HP_KC_ChiliGarlic_1-views.png",
+                    "triangles": 4044
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_BrothJugs",
+            "label": "Bình châm nước dùng",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_BrothJugs.prefab",
+                    "resource": "HotpotKitchen/HP_KC_BrothJugs",
+                    "preview": "../Library/HP_KC_BrothJugs_1.png",
+                    "views": "../Library/HP_KC_BrothJugs_1-views.png",
+                    "triangles": 2016
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Herbs",
+            "label": "Rau thơm và chanh",
+            "group": "Nguyên liệu lẩu",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Herbs.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Herbs",
+                    "preview": "../Library/HP_KC_Herbs_1.png",
+                    "views": "../Library/HP_KC_Herbs_1-views.png",
+                    "triangles": 11716
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Thai",
+            "label": "Lẩu Thái",
+            "group": "Nồi lẩu thành phẩm",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Thai.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Thai",
+                    "preview": "../Library/HP_KC_Thai_1.png",
+                    "views": "../Library/HP_KC_Thai_1-views.png",
+                    "triangles": 7492
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Sichuan",
+            "label": "Lẩu Tứ Xuyên",
+            "group": "Nồi lẩu thành phẩm",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Sichuan.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Sichuan",
+                    "preview": "../Library/HP_KC_Sichuan_1.png",
+                    "views": "../Library/HP_KC_Sichuan_1-views.png",
+                    "triangles": 11500
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_TomatoHotpot",
+            "label": "Lẩu cà chua",
+            "group": "Nồi lẩu thành phẩm",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_TomatoHotpot.prefab",
+                    "resource": "HotpotKitchen/HP_KC_TomatoHotpot",
+                    "preview": "../Library/HP_KC_TomatoHotpot_1.png",
+                    "views": "../Library/HP_KC_TomatoHotpot_1-views.png",
+                    "triangles": 18368
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_MushroomHotpot",
+            "label": "Lẩu nấm",
+            "group": "Nồi lẩu thành phẩm",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_MushroomHotpot.prefab",
+                    "resource": "HotpotKitchen/HP_KC_MushroomHotpot",
+                    "preview": "../Library/HP_KC_MushroomHotpot_1.png",
+                    "views": "../Library/HP_KC_MushroomHotpot_1-views.png",
+                    "triangles": 13020
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Seafood",
+            "label": "Lẩu hải sản",
+            "group": "Nồi lẩu thành phẩm",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Seafood.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Seafood",
+                    "preview": "../Library/HP_KC_Seafood_1.png",
+                    "views": "../Library/HP_KC_Seafood_1-views.png",
+                    "triangles": 13312
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_BeefHotpot",
+            "label": "Lẩu bò",
+            "group": "Nồi lẩu thành phẩm",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_BeefHotpot.prefab",
+                    "resource": "HotpotKitchen/HP_KC_BeefHotpot",
+                    "preview": "../Library/HP_KC_BeefHotpot_1.png",
+                    "views": "../Library/HP_KC_BeefHotpot_1-views.png",
+                    "triangles": 5372
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_ChickenHerb",
+            "label": "Lẩu gà lá é",
+            "group": "Nồi lẩu thành phẩm",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_ChickenHerb.prefab",
+                    "resource": "HotpotKitchen/HP_KC_ChickenHerb",
+                    "preview": "../Library/HP_KC_ChickenHerb_1.png",
+                    "views": "../Library/HP_KC_ChickenHerb_1-views.png",
+                    "triangles": 15572
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_SourFish",
+            "label": "Lẩu cá chua cay",
+            "group": "Nồi lẩu thành phẩm",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_SourFish.prefab",
+                    "resource": "HotpotKitchen/HP_KC_SourFish",
+                    "preview": "../Library/HP_KC_SourFish_1.png",
+                    "views": "../Library/HP_KC_SourFish_1-views.png",
+                    "triangles": 9056
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Goat",
+            "label": "Lẩu dê",
+            "group": "Nồi lẩu thành phẩm",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Goat.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Goat",
+                    "preview": "../Library/HP_KC_Goat_1.png",
+                    "views": "../Library/HP_KC_Goat_1-views.png",
+                    "triangles": 6576
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Crab",
+            "label": "Lẩu cua đồng",
+            "group": "Nồi lẩu thành phẩm",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Crab.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Crab",
+                    "preview": "../Library/HP_KC_Crab_1.png",
+                    "views": "../Library/HP_KC_Crab_1-views.png",
+                    "triangles": 10624
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Sukiyaki",
+            "label": "Sukiyaki",
+            "group": "Nồi lẩu thành phẩm",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Sukiyaki.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Sukiyaki",
+                    "preview": "../Library/HP_KC_Sukiyaki_1.png",
+                    "views": "../Library/HP_KC_Sukiyaki_1-views.png",
+                    "triangles": 10968
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Shabu",
+            "label": "Shabu-shabu",
+            "group": "Nồi lẩu thành phẩm",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Shabu.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Shabu",
+                    "preview": "../Library/HP_KC_Shabu_1.png",
+                    "views": "../Library/HP_KC_Shabu_1-views.png",
+                    "triangles": 19804
+                }
+            ]
+        },
+        {
+            "id": "HP_KC_Kitchen",
+            "label": "Bếp lẩu tám cấp",
+            "group": "Bếp quán lẩu",
+            "variants": [
+                {
+                    "label": "Cấp 1",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Kitchen_L1.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Kitchen_L1",
+                    "preview": "../Library/HP_KC_Kitchen_1.png",
+                    "views": "../Library/HP_KC_Kitchen_1-views.png",
+                    "triangles": 7680
+                },
+                {
+                    "label": "Cấp 2",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Kitchen_L2.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Kitchen_L2",
+                    "preview": "../Library/HP_KC_Kitchen_2.png",
+                    "views": "../Library/HP_KC_Kitchen_2-views.png",
+                    "triangles": 8904
+                },
+                {
+                    "label": "Cấp 3",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Kitchen_L3.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Kitchen_L3",
+                    "preview": "../Library/HP_KC_Kitchen_3.png",
+                    "views": "../Library/HP_KC_Kitchen_3-views.png",
+                    "triangles": 23784
+                },
+                {
+                    "label": "Cấp 4",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Kitchen_L4.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Kitchen_L4",
+                    "preview": "../Library/HP_KC_Kitchen_4.png",
+                    "views": "../Library/HP_KC_Kitchen_4-views.png",
+                    "triangles": 19608
+                },
+                {
+                    "label": "Cấp 5",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Kitchen_L5.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Kitchen_L5",
+                    "preview": "../Library/HP_KC_Kitchen_5.png",
+                    "views": "../Library/HP_KC_Kitchen_5-views.png",
+                    "triangles": 35076
+                },
+                {
+                    "label": "Cấp 6",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Kitchen_L6.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Kitchen_L6",
+                    "preview": "../Library/HP_KC_Kitchen_6.png",
+                    "views": "../Library/HP_KC_Kitchen_6-views.png",
+                    "triangles": 37412
+                },
+                {
+                    "label": "Cấp 7",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Kitchen_L7.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Kitchen_L7",
+                    "preview": "../Library/HP_KC_Kitchen_7.png",
+                    "views": "../Library/HP_KC_Kitchen_7-views.png",
+                    "triangles": 35076
+                },
+                {
+                    "label": "Cấp 8",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotKitchen/HP_KC_Kitchen_L8.prefab",
+                    "resource": "HotpotKitchen/HP_KC_Kitchen_L8",
+                    "preview": "../Library/HP_KC_Kitchen_8.png",
+                    "views": "../Library/HP_KC_Kitchen_8-views.png",
+                    "triangles": 48208
+                }
+            ]
+        }
+    ]
+}

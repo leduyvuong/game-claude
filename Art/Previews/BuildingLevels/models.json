@@ -1,0 +1,130 @@
+{
+    "buildings": [
+        {
+            "type": "FarmHouse",
+            "label": "Nhà chính",
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Structures/Levels/FarmHouse_L1.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/FarmHouse_L2.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/FarmHouse_L3.prefab"
+            ],
+            "triangles": [
+                212,
+                5160,
+                6724
+            ]
+        },
+        {
+            "type": "RiceBarn",
+            "label": "Kho lúa",
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Structures/Levels/RiceBarn_L1.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/RiceBarn_L2.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/RiceBarn_L3.prefab"
+            ],
+            "triangles": [
+                280,
+                3700,
+                4584
+            ]
+        },
+        {
+            "type": "ChickenCoop",
+            "label": "Chuồng gà",
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Structures/Levels/ChickenCoop_L1.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/ChickenCoop_L2.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/ChickenCoop_L3.prefab"
+            ],
+            "triangles": [
+                140,
+                1772,
+                4940
+            ]
+        },
+        {
+            "type": "DuckShelter",
+            "label": "Chuồng vịt",
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Structures/Levels/DuckShelter_L1.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/DuckShelter_L2.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/DuckShelter_L3.prefab"
+            ],
+            "triangles": [
+                128,
+                376,
+                3256
+            ]
+        },
+        {
+            "type": "CowShed",
+            "label": "Chuồng bò",
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Structures/Levels/CowShed_L1.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/CowShed_L2.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/CowShed_L3.prefab"
+            ],
+            "triangles": [
+                592,
+                5524,
+                8612
+            ]
+        },
+        {
+            "type": "PigPen",
+            "label": "Chuồng heo",
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Structures/Levels/PigPen_L1.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/PigPen_L2.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/PigPen_L3.prefab"
+            ],
+            "triangles": [
+                2560,
+                4124,
+                9316
+            ]
+        },
+        {
+            "type": "Greenhouse",
+            "label": "Nhà kính",
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Structures/Levels/Greenhouse_L1.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/Greenhouse_L2.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/Greenhouse_L3.prefab"
+            ],
+            "triangles": [
+                312,
+                1388,
+                1796
+            ]
+        },
+        {
+            "type": "Nursery",
+            "label": "Vườn ươm",
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Structures/Levels/Nursery_L1.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/Nursery_L2.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/Nursery_L3.prefab"
+            ],
+            "triangles": [
+                156,
+                876,
+                2708
+            ]
+        },
+        {
+            "type": "VillageWell",
+            "label": "Giếng",
+            "prefabs": [
+                "Assets/HarvestIsle/Resources/Structures/Levels/VillageWell_L1.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/VillageWell_L2.prefab",
+                "Assets/HarvestIsle/Resources/Structures/Levels/VillageWell_L3.prefab"
+            ],
+            "triangles": [
+                216,
+                1744,
+                1984
+            ]
+        }
+    ]
+}

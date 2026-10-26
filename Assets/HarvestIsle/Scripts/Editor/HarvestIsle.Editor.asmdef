@@ -1,0 +1,6 @@
+{
+  "name": "HarvestIsle.Editor",
+  "rootNamespace": "HarvestIsle.Editor",
+  "references": ["HarvestIsle.Core", "HarvestIsle.Runtime", "Unity.RenderPipelines.Universal.Runtime", "Unity.RenderPipelines.Core.Runtime"],
+  "includePlatforms": ["Editor"]
+}

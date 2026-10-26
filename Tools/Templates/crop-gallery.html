@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cây trồng — Mùa Vàng</title>
+  <style>
+    :root{color-scheme:light;--ink:#263d30;--muted:#647365;--cream:#f5f0e5;--green:#386647;--line:#dddcc9}
+    *{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 "Segoe UI",Tahoma,sans-serif}
+    header{padding:32px 5vw 24px;background:#e5e9d5;border-bottom:1px solid var(--line)}
+    .eyebrow{font-size:12px;letter-spacing:2px;font-weight:700;color:var(--green)}h1{font-size:32px;margin:5px 0 4px;line-height:1.2}p{margin:6px 0;color:var(--muted)}
+    nav{display:flex;gap:8px;flex-wrap:wrap;padding:20px 5vw}button{font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:24px;background:#fffdf6;color:var(--ink);padding:8px 16px}
+    button.active{background:var(--green);border-color:var(--green);color:white}button:hover{border-color:var(--green)}button:focus-visible,a:focus-visible{outline:3px solid #d0a540;outline-offset:3px}
+    main{padding:0 5vw 36px;max-width:1700px;margin:auto}h2{font-size:24px;margin:5px 0 16px}
+    .grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}.stages{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .card{overflow:hidden;border:1px solid var(--line);background:#fffdf7;border-radius:16px;box-shadow:0 3px 12px #263d3005;text-align:left;padding:0;display:block;width:100%;color:inherit;text-decoration:none}
+    .card img{display:block;width:100%;aspect-ratio:5/6;object-fit:contain;background:#f2ede0}.caption{padding:14px 16px}.caption strong{display:block}.step{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--green);margin-bottom:3px}
+    .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:15px}.bar h2{margin:0}.sub{font-size:14px}footer{border-top:1px solid var(--line);padding:20px 5vw;font-size:13px;color:var(--muted)}
+    @media(max-width:1050px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.stages{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:580px){header{padding-top:24px}h1{font-size:26px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stages{grid-template-columns:1fr}.caption{padding:12px}.bar{align-items:start}nav{gap:6px}button{font-size:14px;padding:7px 12px}}
+  </style>
+</head>
+<body>
+  <header><div class="eyebrow">MÙA VÀNG · ĐẢO NÔNG TRẠI</div><h1>Bộ cây trồng</h1><p>10 loại cây · 5 giai đoạn mỗi loại. Chọn một cây để xem quá trình lớn.</p></header>
+  <nav aria-label="Chọn loại cây" id="nav"></nav>
+  <main id="content"></main>
+  <footer>Ảnh được render từ model 3D trong Unity. Các giai đoạn dùng cùng tỷ lệ; chạm ảnh để xem bản lớn.</footer>
+  <script>
+    const data = __CROP_DATA__;
+    const crops = data.crops;
+    const nav = document.getElementById('nav');
+    const content = document.getElementById('content');
+    const all = document.createElement('button'); all.textContent = 'Tất cả'; all.dataset.name = 'all'; nav.append(all);
+    for (const crop of crops) { const b = document.createElement('button'); b.textContent = crop.label; b.dataset.name = crop.name; nav.append(b); }
+    function show(name) {
+      const crop = crops.find(c => c.name === name);
+      nav.querySelectorAll('button').forEach(b => { const active = b.dataset.name === (crop ? crop.name : 'all'); b.classList.toggle('active', active); b.setAttribute('aria-pressed', String(active)); });
+      content.replaceChildren();
+      if (!crop) {
+        const title = document.createElement('h2'); title.textContent = 'Sẵn sàng thu hoạch'; content.append(title);
+        const grid = document.createElement('div'); grid.className = 'grid';
+        for (const c of crops) {
+          const card = document.createElement('button'); card.className = 'card'; card.setAttribute('aria-label', 'Xem các giai đoạn của ' + c.label);
+          card.innerHTML = `<img src="${c.name}_5.png" alt="${c.label} trưởng thành" loading="lazy"><div class="caption"><strong>${c.label}</strong><span class="sub">Xem 5 giai đoạn →</span></div>`;
+          card.addEventListener('click', () => { location.hash = c.name; }); grid.append(card);
+        }
+        content.append(grid);
+      } else {
+        const bar = document.createElement('div'); bar.className = 'bar';
+        const title = document.createElement('h2'); title.textContent = crop.label; bar.append(title);
+        const link = document.createElement('a'); link.href = crop.name + '-stages.png'; link.target = '_blank'; link.rel = 'noopener'; link.textContent = 'Xem ảnh so sánh'; bar.append(link); content.append(bar);
+        const grid = document.createElement('div'); grid.className = 'grid stages';
+        crop.stages.forEach((label, index) => {
+          const card = document.createElement('a'); card.className = 'card'; card.href = crop.name + '_' + (index + 1) + '.png'; card.target = '_blank'; card.rel = 'noopener';
+          card.innerHTML = `<img src="${card.getAttribute('href')}" alt="${crop.label}: ${label}"><div class="caption"><div class="step">Giai đoạn ${index + 1}</div><strong>${label}</strong></div>`; grid.append(card);
+        });
+        content.append(grid);
+      }
+    }
+    nav.addEventListener('click', event => { const button = event.target.closest('button'); if (button) location.hash = button.dataset.name; });
+    addEventListener('hashchange', () => show(location.hash.slice(1)));
+    show(location.hash.slice(1));
+  </script>
+</body>
+</html>

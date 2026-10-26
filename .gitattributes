@@ -1,0 +1,2 @@
+Assets/HarvestIsle/Art/Structures/CompleteCollection.asset filter=lfs diff=lfs merge=lfs -text
+Assets/HarvestIsle/Art/Structures/ArchitectureCollection.asset filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,130 @@
+{
+    "models": [
+        {
+            "name": "FarmHouse",
+            "label": "Nhà mái ngói",
+            "group": "Nhà cửa",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/FarmHouse.prefab",
+            "triangles": 5160
+        },
+        {
+            "name": "RiceBarn",
+            "label": "Kho lúa",
+            "group": "Nhà cửa",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/RiceBarn.prefab",
+            "triangles": 3700
+        },
+        {
+            "name": "ChickenCoop",
+            "label": "Chuồng gà",
+            "group": "Chuồng trại",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/ChickenCoop.prefab",
+            "triangles": 1772
+        },
+        {
+            "name": "DuckShelter",
+            "label": "Chuồng vịt",
+            "group": "Chuồng trại",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/DuckShelter.prefab",
+            "triangles": 376
+        },
+        {
+            "name": "CowShed",
+            "label": "Chuồng bò",
+            "group": "Chuồng trại",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/CowShed.prefab",
+            "triangles": 5524
+        },
+        {
+            "name": "PigPen",
+            "label": "Chuồng heo",
+            "group": "Chuồng trại",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/PigPen.prefab",
+            "triangles": 4124
+        },
+        {
+            "name": "Greenhouse",
+            "label": "Nhà kính",
+            "group": "Trồng trọt",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/Greenhouse.prefab",
+            "triangles": 1388
+        },
+        {
+            "name": "Nursery",
+            "label": "Vườn ươm",
+            "group": "Trồng trọt",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/Nursery.prefab",
+            "triangles": 876
+        },
+        {
+            "name": "BambooFence",
+            "label": "Hàng rào tre",
+            "group": "Đồ dùng",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/BambooFence.prefab",
+            "triangles": 704
+        },
+        {
+            "name": "BambooCorner",
+            "label": "Góc rào tre",
+            "group": "Đồ dùng",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/BambooCorner.prefab",
+            "triangles": 1408
+        },
+        {
+            "name": "BambooGate",
+            "label": "Cổng tre",
+            "group": "Đồ dùng",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/BambooGate.prefab",
+            "triangles": 1544
+        },
+        {
+            "name": "Scarecrow",
+            "label": "Bù nhìn",
+            "group": "Trồng trọt",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/Scarecrow.prefab",
+            "triangles": 460
+        },
+        {
+            "name": "FeedingTrough",
+            "label": "Máng ăn",
+            "group": "Chuồng trại",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/FeedingTrough.prefab",
+            "triangles": 360
+        },
+        {
+            "name": "WaterTrough",
+            "label": "Máng nước",
+            "group": "Chuồng trại",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/WaterTrough.prefab",
+            "triangles": 72
+        },
+        {
+            "name": "HayBale",
+            "label": "Kiện rơm",
+            "group": "Đồ dùng",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/HayBale.prefab",
+            "triangles": 220
+        },
+        {
+            "name": "SupplyCrate",
+            "label": "Thùng nông sản",
+            "group": "Đồ dùng",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/SupplyCrate.prefab",
+            "triangles": 296
+        },
+        {
+            "name": "LanternPost",
+            "label": "Cột đèn lồng",
+            "group": "Đồ dùng",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/LanternPost.prefab",
+            "triangles": 480
+        },
+        {
+            "name": "VillageWell",
+            "label": "Giếng làng",
+            "group": "Nhà cửa",
+            "prefab": "Assets/HarvestIsle/Resources/Structures/VillageWell.prefab",
+            "triangles": 1744
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "pack": "UltimateCrops",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "source": "https://quaternius.com/packs/ultimatecrops.html",
+    "files": [
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/Models/Carrot_1.fbx",
+        "sha256": "46abf05f871b10ab1140c9d80370ef8c2617a1f10755ea936a72a3c69150c28a"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/Models/Carrot_2.fbx",
+        "sha256": "dc4deb4d7e52958cec54b187ba0a61954ec00863f4e2a352372cf6e7a37a0a19"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/Models/Carrot_3.fbx",
+        "sha256": "34e7bbff04796cc4a2c8b104dd07898e8d186027d0d62f5e3f8fd39f076671d0"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/Models/Carrot_4.fbx",
+        "sha256": "9b220d77e66cec7b33e0786192dc693033ef4814594e58ad6227c96a6f788d8a"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/Models/Corn_1.fbx",
+        "sha256": "72bdb710399afd83597b49d36592fdfb5bcfb27b47dd01e123a96a6f93cae14e"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/Models/Corn_2.fbx",
+        "sha256": "279dda48d282418e13f3a2bb6a1932a8d678f4af8f0ab2d6fc2c4be4f059cba2"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/Models/Corn_3.fbx",
+        "sha256": "3e59c3b6664499e3c5848f9a2e0f082c152e1d82a36ff3a647fd46e069dbff5f"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/Models/Corn_4.fbx",
+        "sha256": "efa76806e992dcf7fa8597d0b327e06319a81b4d1d6aef9b93251bd54479ef61"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/Models/Pumpkin_1.fbx",
+        "sha256": "27c81dfb961412925c45d9433e8baa612c1e4fb3371d1cdd35e88bf24cb0c43f"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/Models/Pumpkin_2.fbx",
+        "sha256": "1f752456f5292089dc03fe776905ef028148b5abbc81717ae1ca30f1867ccc93"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/Models/Pumpkin_3.fbx",
+        "sha256": "c9ae7b0826e056801a62b6b83599f2116d43821b180b255b5fcd55106338fffb"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/Models/Pumpkin_4.fbx",
+        "sha256": "691ae07ad6132318b8b26cb5966481e6f35f0d3de819005e00f9dc77977422a8"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/UltimateCrops/License.txt",
+        "sha256": "83d8959f9fc56353ed571fbe2dc52e4bcd64508e2399501cd45ac2ce3df0bf8c"
+      }
+    ]
+  },
+  {
+    "pack": "FarmBuildings",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "source": "https://quaternius.com/packs/farmbuildings.html",
+    "files": [
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/FarmBuildings/Models/SmallBarn.fbx",
+        "sha256": "bfa85180603ba1dfcea9f207da6911e8f57f0f559d230f8417fd4dc959564a6a"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/FarmBuildings/Models/Well.fbx",
+        "sha256": "b5aa5b3f77a9eeba740a4ac4d58bac1ae08b7073424cbfcee0c215cbbd79210c"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/FarmBuildings/Models/Windmill.fbx",
+        "sha256": "5dddd661f5ad3b198a4f3235611088e9fc0ad473d35182c4d4362c7f2253916e"
+      },
+      {
+        "file": "Assets/HarvestIsle/Resources/Art/FarmBuildings/License.txt",
+        "sha256": "83d8959f9fc56353ed571fbe2dc52e4bcd64508e2399501cd45ac2ce3df0bf8c"
+      }
+    ]
+  }
+]

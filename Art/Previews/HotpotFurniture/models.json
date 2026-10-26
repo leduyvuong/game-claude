@@ -1,0 +1,786 @@
+{
+    "version": 1,
+    "prefabCount": 549,
+    "models": [
+        {
+            "id": "HP_RusticRound",
+            "label": "Bàn tròn ghế đẩu",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_RusticRound.prefab",
+                    "resource": "HotpotFurniture/HP_RusticRound",
+                    "preview": "../Library/HP_RusticRound_1.png",
+                    "views": "../Library/HP_RusticRound_1-views.png",
+                    "triangles": 14196
+                }
+            ]
+        },
+        {
+            "id": "HP_GrandRound",
+            "label": "Bàn tròn đại gia đình",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_GrandRound.prefab",
+                    "resource": "HotpotFurniture/HP_GrandRound",
+                    "preview": "../Library/HP_GrandRound_1.png",
+                    "views": "../Library/HP_GrandRound_1-views.png",
+                    "triangles": 14292
+                }
+            ]
+        },
+        {
+            "id": "HP_ClassicSquare",
+            "label": "Bàn gỗ vuông",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_ClassicSquare.prefab",
+                    "resource": "HotpotFurniture/HP_ClassicSquare",
+                    "preview": "../Library/HP_ClassicSquare_1.png",
+                    "views": "../Library/HP_ClassicSquare_1-views.png",
+                    "triangles": 13584
+                }
+            ]
+        },
+        {
+            "id": "HP_FamilyRectangle",
+            "label": "Bàn gỗ hai nồi",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_FamilyRectangle.prefab",
+                    "resource": "HotpotFurniture/HP_FamilyRectangle",
+                    "preview": "../Library/HP_FamilyRectangle_1.png",
+                    "views": "../Library/HP_FamilyRectangle_1-views.png",
+                    "triangles": 17892
+                }
+            ]
+        },
+        {
+            "id": "HP_CozyPair",
+            "label": "Bàn đôi ghế đệm",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_CozyPair.prefab",
+                    "resource": "HotpotFurniture/HP_CozyPair",
+                    "preview": "../Library/HP_CozyPair_1.png",
+                    "views": "../Library/HP_CozyPair_1-views.png",
+                    "triangles": 11856
+                }
+            ]
+        },
+        {
+            "id": "HP_StreetSteel",
+            "label": "Bàn inox ghế đỏ",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_StreetSteel.prefab",
+                    "resource": "HotpotFurniture/HP_StreetSteel",
+                    "preview": "../Library/HP_StreetSteel_1.png",
+                    "views": "../Library/HP_StreetSteel_1-views.png",
+                    "triangles": 17184
+                }
+            ]
+        },
+        {
+            "id": "HP_GardenPlastic",
+            "label": "Bàn nhựa xanh",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_GardenPlastic.prefab",
+                    "resource": "HotpotFurniture/HP_GardenPlastic",
+                    "preview": "../Library/HP_GardenPlastic_1.png",
+                    "views": "../Library/HP_GardenPlastic_1-views.png",
+                    "triangles": 17184
+                }
+            ]
+        },
+        {
+            "id": "HP_Industrial",
+            "label": "Bàn ghế sắt",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_Industrial.prefab",
+                    "resource": "HotpotFurniture/HP_Industrial",
+                    "preview": "../Library/HP_Industrial_1.png",
+                    "views": "../Library/HP_Industrial_1-views.png",
+                    "triangles": 13584
+                }
+            ]
+        },
+        {
+            "id": "HP_MarbleGold",
+            "label": "Bàn đá chân vàng",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_MarbleGold.prefab",
+                    "resource": "HotpotFurniture/HP_MarbleGold",
+                    "preview": "../Library/HP_MarbleGold_1.png",
+                    "views": "../Library/HP_MarbleGold_1-views.png",
+                    "triangles": 17604
+                }
+            ]
+        },
+        {
+            "id": "HP_LeatherFeast",
+            "label": "Bàn tiệc ghế da",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_LeatherFeast.prefab",
+                    "resource": "HotpotFurniture/HP_LeatherFeast",
+                    "preview": "../Library/HP_LeatherFeast_1.png",
+                    "views": "../Library/HP_LeatherFeast_1-views.png",
+                    "triangles": 18912
+                }
+            ]
+        },
+        {
+            "id": "HP_RedBooth",
+            "label": "Bàn sofa đỏ",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_RedBooth.prefab",
+                    "resource": "HotpotFurniture/HP_RedBooth",
+                    "preview": "../Library/HP_RedBooth_1.png",
+                    "views": "../Library/HP_RedBooth_1-views.png",
+                    "triangles": 23328
+                }
+            ]
+        },
+        {
+            "id": "HP_TealCorner",
+            "label": "Bàn sofa góc xanh",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_TealCorner.prefab",
+                    "resource": "HotpotFurniture/HP_TealCorner",
+                    "preview": "../Library/HP_TealCorner_1.png",
+                    "views": "../Library/HP_TealCorner_1-views.png",
+                    "triangles": 23328
+                }
+            ]
+        },
+        {
+            "id": "HP_Tatami",
+            "label": "Bàn bệt đệm cói",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_Tatami.prefab",
+                    "resource": "HotpotFurniture/HP_Tatami",
+                    "preview": "../Library/HP_Tatami_1.png",
+                    "views": "../Library/HP_Tatami_1-views.png",
+                    "triangles": 13104
+                }
+            ]
+        },
+        {
+            "id": "HP_Communal",
+            "label": "Bàn dài ghế băng",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_Communal.prefab",
+                    "resource": "HotpotFurniture/HP_Communal",
+                    "preview": "../Library/HP_Communal_1.png",
+                    "views": "../Library/HP_Communal_1-views.png",
+                    "triangles": 24288
+                }
+            ]
+        },
+        {
+            "id": "HP_CounterDining",
+            "label": "Quầy lẩu cá nhân",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_CounterDining.prefab",
+                    "resource": "HotpotFurniture/HP_CounterDining",
+                    "preview": "../Library/HP_CounterDining_1.png",
+                    "views": "../Library/HP_CounterDining_1-views.png",
+                    "triangles": 21096
+                }
+            ]
+        },
+        {
+            "id": "HP_BambooPatio",
+            "label": "Bàn tre sân vườn",
+            "group": "Quán lẩu · Bàn ăn",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_BambooPatio.prefab",
+                    "resource": "HotpotFurniture/HP_BambooPatio",
+                    "preview": "../Library/HP_BambooPatio_1.png",
+                    "views": "../Library/HP_BambooPatio_1-views.png",
+                    "triangles": 15180
+                }
+            ]
+        },
+        {
+            "id": "HP_LanternPost",
+            "label": "Cột ba đèn lồng",
+            "group": "Quán lẩu · Đèn & tường",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_LanternPost.prefab",
+                    "resource": "HotpotFurniture/HP_LanternPost",
+                    "preview": "../Library/HP_LanternPost_1.png",
+                    "views": "../Library/HP_LanternPost_1-views.png",
+                    "triangles": 8040
+                }
+            ]
+        },
+        {
+            "id": "HP_MenuEasel",
+            "label": "Bảng thực đơn",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_MenuEasel.prefab",
+                    "resource": "HotpotFurniture/HP_MenuEasel",
+                    "preview": "../Library/HP_MenuEasel_1.png",
+                    "views": "../Library/HP_MenuEasel_1-views.png",
+                    "triangles": 6708
+                }
+            ]
+        },
+        {
+            "id": "HP_BambooPlanter",
+            "label": "Bồn trúc",
+            "group": "Quán lẩu · Cây & cảnh",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_BambooPlanter.prefab",
+                    "resource": "HotpotFurniture/HP_BambooPlanter",
+                    "preview": "../Library/HP_BambooPlanter_1.png",
+                    "views": "../Library/HP_BambooPlanter_1-views.png",
+                    "triangles": 12120
+                }
+            ]
+        },
+        {
+            "id": "HP_CeramicTree",
+            "label": "Cây chậu sứ",
+            "group": "Quán lẩu · Cây & cảnh",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_CeramicTree.prefab",
+                    "resource": "HotpotFurniture/HP_CeramicTree",
+                    "preview": "../Library/HP_CeramicTree_1.png",
+                    "views": "../Library/HP_CeramicTree_1-views.png",
+                    "triangles": 3696
+                }
+            ]
+        },
+        {
+            "id": "HP_Bonsai",
+            "label": "Bonsai đôn gỗ",
+            "group": "Quán lẩu · Cây & cảnh",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_Bonsai.prefab",
+                    "resource": "HotpotFurniture/HP_Bonsai",
+                    "preview": "../Library/HP_Bonsai_1.png",
+                    "views": "../Library/HP_Bonsai_1-views.png",
+                    "triangles": 5036
+                }
+            ]
+        },
+        {
+            "id": "HP_FlowerBox",
+            "label": "Bồn hoa dài",
+            "group": "Quán lẩu · Cây & cảnh",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_FlowerBox.prefab",
+                    "resource": "HotpotFurniture/HP_FlowerBox",
+                    "preview": "../Library/HP_FlowerBox_1.png",
+                    "views": "../Library/HP_FlowerBox_1-views.png",
+                    "triangles": 28272
+                }
+            ]
+        },
+        {
+            "id": "HP_FoldingScreen",
+            "label": "Bình phong",
+            "group": "Quán lẩu · Đèn & tường",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_FoldingScreen.prefab",
+                    "resource": "HotpotFurniture/HP_FoldingScreen",
+                    "preview": "../Library/HP_FoldingScreen_1.png",
+                    "views": "../Library/HP_FoldingScreen_1-views.png",
+                    "triangles": 672
+                }
+            ]
+        },
+        {
+            "id": "HP_SlatDivider",
+            "label": "Vách nan gỗ",
+            "group": "Quán lẩu · Đèn & tường",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_SlatDivider.prefab",
+                    "resource": "HotpotFurniture/HP_SlatDivider",
+                    "preview": "../Library/HP_SlatDivider_1.png",
+                    "views": "../Library/HP_SlatDivider_1-views.png",
+                    "triangles": 228
+                }
+            ]
+        },
+        {
+            "id": "HP_RockFountain",
+            "label": "Tiểu cảnh thác đá",
+            "group": "Quán lẩu · Cây & cảnh",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_RockFountain.prefab",
+                    "resource": "HotpotFurniture/HP_RockFountain",
+                    "preview": "../Library/HP_RockFountain_1.png",
+                    "views": "../Library/HP_RockFountain_1-views.png",
+                    "triangles": 16068
+                }
+            ]
+        },
+        {
+            "id": "HP_Aquarium",
+            "label": "Bể cá tủ gỗ",
+            "group": "Quán lẩu · Cây & cảnh",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_Aquarium.prefab",
+                    "resource": "HotpotFurniture/HP_Aquarium",
+                    "preview": "../Library/HP_Aquarium_1.png",
+                    "views": "../Library/HP_Aquarium_1-views.png",
+                    "triangles": 7336
+                }
+            ]
+        },
+        {
+            "id": "HP_FloorLantern",
+            "label": "Đèn đứng giấy",
+            "group": "Quán lẩu · Đèn & tường",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_FloorLantern.prefab",
+                    "resource": "HotpotFurniture/HP_FloorLantern",
+                    "preview": "../Library/HP_FloorLantern_1.png",
+                    "views": "../Library/HP_FloorLantern_1-views.png",
+                    "triangles": 96
+                }
+            ]
+        },
+        {
+            "id": "HP_PendantTrio",
+            "label": "Bộ ba đèn thả",
+            "group": "Quán lẩu · Đèn & tường",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_PendantTrio.prefab",
+                    "resource": "HotpotFurniture/HP_PendantTrio",
+                    "preview": "../Library/HP_PendantTrio_1.png",
+                    "views": "../Library/HP_PendantTrio_1-views.png",
+                    "triangles": 7884
+                }
+            ]
+        },
+        {
+            "id": "HP_WallClock",
+            "label": "Đồng hồ gỗ",
+            "group": "Quán lẩu · Đèn & tường",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_WallClock.prefab",
+                    "resource": "HotpotFurniture/HP_WallClock",
+                    "preview": "../Library/HP_WallClock_1.png",
+                    "views": "../Library/HP_WallClock_1-views.png",
+                    "triangles": 1104
+                }
+            ]
+        },
+        {
+            "id": "HP_HotpotPoster",
+            "label": "Tranh nồi lẩu",
+            "group": "Quán lẩu · Đèn & tường",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_HotpotPoster.prefab",
+                    "resource": "HotpotFurniture/HP_HotpotPoster",
+                    "preview": "../Library/HP_HotpotPoster_1.png",
+                    "views": "../Library/HP_HotpotPoster_1-views.png",
+                    "triangles": 5064
+                }
+            ]
+        },
+        {
+            "id": "HP_CeramicShelf",
+            "label": "Kệ gốm treo tường",
+            "group": "Quán lẩu · Đèn & tường",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_CeramicShelf.prefab",
+                    "resource": "HotpotFurniture/HP_CeramicShelf",
+                    "preview": "../Library/HP_CeramicShelf_1.png",
+                    "views": "../Library/HP_CeramicShelf_1-views.png",
+                    "triangles": 7776
+                }
+            ]
+        },
+        {
+            "id": "HP_HangingPlants",
+            "label": "Giàn cây treo",
+            "group": "Quán lẩu · Cây & cảnh",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_HangingPlants.prefab",
+                    "resource": "HotpotFurniture/HP_HangingPlants",
+                    "preview": "../Library/HP_HangingPlants_1.png",
+                    "views": "../Library/HP_HangingPlants_1-views.png",
+                    "triangles": 13248
+                }
+            ]
+        },
+        {
+            "id": "HP_LuckyCat",
+            "label": "Mèo thần tài",
+            "group": "Quán lẩu · Đèn & tường",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_LuckyCat.prefab",
+                    "resource": "HotpotFurniture/HP_LuckyCat",
+                    "preview": "../Library/HP_LuckyCat_1.png",
+                    "views": "../Library/HP_LuckyCat_1-views.png",
+                    "triangles": 4756
+                }
+            ]
+        },
+        {
+            "id": "HP_NorenCurtain",
+            "label": "Rèm đỏ",
+            "group": "Quán lẩu · Đèn & tường",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_NorenCurtain.prefab",
+                    "resource": "HotpotFurniture/HP_NorenCurtain",
+                    "preview": "../Library/HP_NorenCurtain_1.png",
+                    "views": "../Library/HP_NorenCurtain_1-views.png",
+                    "triangles": 2520
+                }
+            ]
+        },
+        {
+            "id": "HP_Reception",
+            "label": "Quầy thu ngân",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_Reception.prefab",
+                    "resource": "HotpotFurniture/HP_Reception",
+                    "preview": "../Library/HP_Reception_1.png",
+                    "views": "../Library/HP_Reception_1-views.png",
+                    "triangles": 6608
+                }
+            ]
+        },
+        {
+            "id": "HP_WaitingBench",
+            "label": "Ghế chờ đệm đỏ",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_WaitingBench.prefab",
+                    "resource": "HotpotFurniture/HP_WaitingBench",
+                    "preview": "../Library/HP_WaitingBench_1.png",
+                    "views": "../Library/HP_WaitingBench_1-views.png",
+                    "triangles": 964
+                }
+            ]
+        },
+        {
+            "id": "HP_ServingCart",
+            "label": "Xe đẩy món",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_ServingCart.prefab",
+                    "resource": "HotpotFurniture/HP_ServingCart",
+                    "preview": "../Library/HP_ServingCart_1.png",
+                    "views": "../Library/HP_ServingCart_1-views.png",
+                    "triangles": 7224
+                }
+            ]
+        },
+        {
+            "id": "HP_SauceCabinet",
+            "label": "Quầy nước chấm",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_SauceCabinet.prefab",
+                    "resource": "HotpotFurniture/HP_SauceCabinet",
+                    "preview": "../Library/HP_SauceCabinet_1.png",
+                    "views": "../Library/HP_SauceCabinet_1-views.png",
+                    "triangles": 20244
+                }
+            ]
+        },
+        {
+            "id": "HP_ChilledDisplay",
+            "label": "Tủ mát nguyên liệu",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_ChilledDisplay.prefab",
+                    "resource": "HotpotFurniture/HP_ChilledDisplay",
+                    "preview": "../Library/HP_ChilledDisplay_1.png",
+                    "views": "../Library/HP_ChilledDisplay_1-views.png",
+                    "triangles": 8112
+                }
+            ]
+        },
+        {
+            "id": "HP_DrinksFridge",
+            "label": "Tủ nước giải khát",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_DrinksFridge.prefab",
+                    "resource": "HotpotFurniture/HP_DrinksFridge",
+                    "preview": "../Library/HP_DrinksFridge_1.png",
+                    "views": "../Library/HP_DrinksFridge_1-views.png",
+                    "triangles": 10812
+                }
+            ]
+        },
+        {
+            "id": "HP_DishCupboard",
+            "label": "Tủ bát đũa",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_DishCupboard.prefab",
+                    "resource": "HotpotFurniture/HP_DishCupboard",
+                    "preview": "../Library/HP_DishCupboard_1.png",
+                    "views": "../Library/HP_DishCupboard_1-views.png",
+                    "triangles": 31620
+                }
+            ]
+        },
+        {
+            "id": "HP_BambooSteamers",
+            "label": "Bộ xửng tre",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_BambooSteamers.prefab",
+                    "resource": "HotpotFurniture/HP_BambooSteamers",
+                    "preview": "../Library/HP_BambooSteamers_1.png",
+                    "views": "../Library/HP_BambooSteamers_1-views.png",
+                    "triangles": 7164
+                }
+            ]
+        },
+        {
+            "id": "HP_RiceCooker",
+            "label": "Tủ nồi cơm",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_RiceCooker.prefab",
+                    "resource": "HotpotFurniture/HP_RiceCooker",
+                    "preview": "../Library/HP_RiceCooker_1.png",
+                    "views": "../Library/HP_RiceCooker_1-views.png",
+                    "triangles": 1792
+                }
+            ]
+        },
+        {
+            "id": "HP_TeaTrolley",
+            "label": "Xe trà",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_TeaTrolley.prefab",
+                    "resource": "HotpotFurniture/HP_TeaTrolley",
+                    "preview": "../Library/HP_TeaTrolley_1.png",
+                    "views": "../Library/HP_TeaTrolley_1-views.png",
+                    "triangles": 4628
+                }
+            ]
+        },
+        {
+            "id": "HP_IceBucket",
+            "label": "Xô đá ướp nước",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_IceBucket.prefab",
+                    "resource": "HotpotFurniture/HP_IceBucket",
+                    "preview": "../Library/HP_IceBucket_1.png",
+                    "views": "../Library/HP_IceBucket_1-views.png",
+                    "triangles": 3944
+                }
+            ]
+        },
+        {
+            "id": "HP_StandingFan",
+            "label": "Quạt đứng",
+            "group": "Quán lẩu · Tiện ích",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_StandingFan.prefab",
+                    "resource": "HotpotFurniture/HP_StandingFan",
+                    "preview": "../Library/HP_StandingFan_1.png",
+                    "views": "../Library/HP_StandingFan_1-views.png",
+                    "triangles": 5600
+                }
+            ]
+        },
+        {
+            "id": "HP_CoatStand",
+            "label": "Cây treo áo",
+            "group": "Quán lẩu · Tiện ích",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_CoatStand.prefab",
+                    "resource": "HotpotFurniture/HP_CoatStand",
+                    "preview": "../Library/HP_CoatStand_1.png",
+                    "views": "../Library/HP_CoatStand_1-views.png",
+                    "triangles": 2896
+                }
+            ]
+        },
+        {
+            "id": "HP_UmbrellaBasket",
+            "label": "Giỏ đựng ô",
+            "group": "Quán lẩu · Tiện ích",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_UmbrellaBasket.prefab",
+                    "resource": "HotpotFurniture/HP_UmbrellaBasket",
+                    "preview": "../Library/HP_UmbrellaBasket_1.png",
+                    "views": "../Library/HP_UmbrellaBasket_1-views.png",
+                    "triangles": 6512
+                }
+            ]
+        },
+        {
+            "id": "HP_RecycleBins",
+            "label": "Thùng phân loại rác",
+            "group": "Quán lẩu · Tiện ích",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_RecycleBins.prefab",
+                    "resource": "HotpotFurniture/HP_RecycleBins",
+                    "preview": "../Library/HP_RecycleBins_1.png",
+                    "views": "../Library/HP_RecycleBins_1-views.png",
+                    "triangles": 144
+                }
+            ]
+        },
+        {
+            "id": "HP_FireExtinguisher",
+            "label": "Bình chữa cháy",
+            "group": "Quán lẩu · Tiện ích",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_FireExtinguisher.prefab",
+                    "resource": "HotpotFurniture/HP_FireExtinguisher",
+                    "preview": "../Library/HP_FireExtinguisher_1.png",
+                    "views": "../Library/HP_FireExtinguisher_1-views.png",
+                    "triangles": 800
+                }
+            ]
+        },
+        {
+            "id": "HP_PrepTable",
+            "label": "Bàn sơ chế inox",
+            "group": "Quán lẩu · Phục vụ",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_PrepTable.prefab",
+                    "resource": "HotpotFurniture/HP_PrepTable",
+                    "preview": "../Library/HP_PrepTable_1.png",
+                    "views": "../Library/HP_PrepTable_1-views.png",
+                    "triangles": 13188
+                }
+            ]
+        },
+        {
+            "id": "HP_ExhaustHood",
+            "label": "Chụp hút khói",
+            "group": "Quán lẩu · Tiện ích",
+            "variants": [
+                {
+                    "label": "Mẫu gốc",
+                    "prefab": "Assets/HarvestIsle/Resources/HotpotFurniture/HP_ExhaustHood.prefab",
+                    "resource": "HotpotFurniture/HP_ExhaustHood",
+                    "preview": "../Library/HP_ExhaustHood_1.png",
+                    "views": "../Library/HP_ExhaustHood_1-views.png",
+                    "triangles": 1968
+                }
+            ]
+        }
+    ]
+}

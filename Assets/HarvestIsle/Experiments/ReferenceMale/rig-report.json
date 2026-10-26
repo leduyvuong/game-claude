@@ -1,0 +1,9 @@
+{
+  "bones": 49,
+  "maxInfluences": 4,
+  "meshes": 8,
+  "vertices": 57165,
+  "triangles": 112420,
+  "weightsNormalized": true,
+  "source": "MakeHuman default rig/weights CC0, merged to body and finger chains"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "HarvestIsle.Core",
+  "rootNamespace": "HarvestIsle.Core",
+  "noEngineReferences": true
+}

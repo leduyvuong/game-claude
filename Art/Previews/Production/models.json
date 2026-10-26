@@ -1,0 +1,132 @@
+{
+    "models": [
+        {
+            "name": "Windmill",
+            "label": "Cối xay gió",
+            "group": "Chế biến",
+            "prefab": "Assets/HarvestIsle/Resources/Production/Windmill.prefab",
+            "triangles": 1792,
+            "animated": true
+        },
+        {
+            "name": "BakeryOven",
+            "label": "Lò bánh mì",
+            "group": "Chế biến",
+            "prefab": "Assets/HarvestIsle/Resources/Production/BakeryOven.prefab",
+            "triangles": 2280,
+            "animated": false
+        },
+        {
+            "name": "DairyChurn",
+            "label": "Máy chế biến sữa",
+            "group": "Chế biến",
+            "prefab": "Assets/HarvestIsle/Resources/Production/DairyChurn.prefab",
+            "triangles": 1968,
+            "animated": true
+        },
+        {
+            "name": "JuicePress",
+            "label": "Máy ép trái cây",
+            "group": "Chế biến",
+            "prefab": "Assets/HarvestIsle/Resources/Production/JuicePress.prefab",
+            "triangles": 5684,
+            "animated": true
+        },
+        {
+            "name": "SoyVat",
+            "label": "Nồi ủ tương",
+            "group": "Chế biến",
+            "prefab": "Assets/HarvestIsle/Resources/Production/SoyVat.prefab",
+            "triangles": 1676,
+            "animated": false
+        },
+        {
+            "name": "HerbalBench",
+            "label": "Bàn thảo dược",
+            "group": "Canh tác",
+            "prefab": "Assets/HarvestIsle/Resources/Production/HerbalBench.prefab",
+            "triangles": 1624,
+            "animated": false
+        },
+        {
+            "name": "CompostBin",
+            "label": "Thùng ủ phân",
+            "group": "Canh tác",
+            "prefab": "Assets/HarvestIsle/Resources/Production/CompostBin.prefab",
+            "triangles": 760,
+            "animated": false
+        },
+        {
+            "name": "GraftingBench",
+            "label": "Bàn ghép cây",
+            "group": "Canh tác",
+            "prefab": "Assets/HarvestIsle/Resources/Production/GraftingBench.prefab",
+            "triangles": 1476,
+            "animated": false
+        },
+        {
+            "name": "BeeHive",
+            "label": "Tổ ong",
+            "group": "Canh tác",
+            "prefab": "Assets/HarvestIsle/Resources/Production/BeeHive.prefab",
+            "triangles": 996,
+            "animated": false
+        },
+        {
+            "name": "MarketStall",
+            "label": "Quầy chợ",
+            "group": "Giao thương",
+            "prefab": "Assets/HarvestIsle/Resources/Production/MarketStall.prefab",
+            "triangles": 5268,
+            "animated": false
+        },
+        {
+            "name": "HandCart",
+            "label": "Xe kéo",
+            "group": "Giao thương",
+            "prefab": "Assets/HarvestIsle/Resources/Production/HandCart.prefab",
+            "triangles": 2740,
+            "animated": false
+        },
+        {
+            "name": "WoodBridge",
+            "label": "Cầu gỗ",
+            "group": "Giao thương",
+            "prefab": "Assets/HarvestIsle/Resources/Production/WoodBridge.prefab",
+            "triangles": 1700,
+            "animated": false
+        },
+        {
+            "name": "BoatDock",
+            "label": "Bến thuyền",
+            "group": "Giao thương",
+            "prefab": "Assets/HarvestIsle/Resources/Production/BoatDock.prefab",
+            "triangles": 2896,
+            "animated": false
+        },
+        {
+            "name": "CargoBoat",
+            "label": "Thuyền chở hàng",
+            "group": "Giao thương",
+            "prefab": "Assets/HarvestIsle/Resources/Production/CargoBoat.prefab",
+            "triangles": 3496,
+            "animated": false
+        },
+        {
+            "name": "WeatherStation",
+            "label": "Trạm thời tiết",
+            "group": "Công trình chung",
+            "prefab": "Assets/HarvestIsle/Resources/Production/WeatherStation.prefab",
+            "triangles": 530,
+            "animated": true
+        },
+        {
+            "name": "Lighthouse",
+            "label": "Hải đăng",
+            "group": "Công trình chung",
+            "prefab": "Assets/HarvestIsle/Resources/Production/Lighthouse.prefab",
+            "triangles": 2404,
+            "animated": true
+        }
+    ]
+}

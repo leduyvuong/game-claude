@@ -1,0 +1,9 @@
+newmtl Clay
+Kd .65 .62 .57
+
+newmtl Eye
+Kd 1 1 1
+map_Kd Eyes.png
+
+newmtl Brow
+Kd .22 .20 .18
